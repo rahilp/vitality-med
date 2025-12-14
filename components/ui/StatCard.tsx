@@ -17,26 +17,26 @@ export const StatCard: React.FC<StatCardProps> = ({
   return (
     <div
       className={cn(
-        'relative bg-white/10 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-white/20',
-        'hover:bg-white/15 hover:border-white/30 transition-all duration-300',
+        'relative bg-white/5 backdrop-blur-sm rounded-lg p-4 sm:p-5 border border-white/10',
+        'hover:bg-white/10 hover:border-white/20 transition-all duration-300',
         className
       )}
     >
       {icon && (
-        <div className="flex justify-center mb-6">
-          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-gold-light via-gold-primary to-gold-dark flex items-center justify-center border-2 border-gold-primary/40">
+        <div className="flex justify-center mb-4">
+          <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-gold-primary/20 to-gold-dark/20 flex items-center justify-center border border-gold-primary/30">
             {React.cloneElement(icon as React.ReactElement, {
-              className: 'w-10 h-10 sm:w-12 sm:h-12 text-teal-dark stroke-[3]',
-              strokeWidth: 3,
+              className: 'w-5 h-5 sm:w-6 sm:h-6 text-gold-primary',
+              strokeWidth: 2,
               fill: 'none',
             })}
           </div>
         </div>
       )}
-      <div className="text-5xl sm:text-6xl font-bold text-gold-primary mb-2 leading-tight">
+      <div className="text-3xl sm:text-4xl font-semibold text-gold-primary mb-1 leading-tight">
         {value}
       </div>
-      <div className="text-base sm:text-lg text-gray-200 font-medium">
+      <div className="text-sm sm:text-base text-gray-300 font-normal">
         {label}
       </div>
     </div>

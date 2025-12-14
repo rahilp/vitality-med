@@ -23,6 +23,22 @@ export const metadata: Metadata = {
   },
   description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine.',
   keywords: ['concierge medicine', 'direct primary care', 'healthcare without insurance', 'affordable healthcare', 'personalized medicine'],
+  icons: {
+    icon: [
+      { url: '/icon.png', sizes: 'any' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: '32x32' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Vitality',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

@@ -1,6 +1,7 @@
 import { Hero } from '@/components/sections/Hero';
 import { HowItWorksPreview } from '@/components/sections/HowItWorksPreview';
 import { BenefitsPreview } from '@/components/sections/BenefitsPreview';
+import { TreatmentsPreview } from '@/components/sections/TreatmentsPreview';
 import { PricingPreview } from '@/components/sections/PricingPreview';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTA } from '@/components/sections/CTA';
@@ -21,6 +22,7 @@ export default function HomePage() {
       <Hero />
       <HowItWorksPreview />
       <BenefitsPreview />
+      <TreatmentsPreview />
       <PricingPreview />
       <FAQ variant="homepage" />
       <CTA />

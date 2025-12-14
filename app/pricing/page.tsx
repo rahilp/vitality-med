@@ -11,6 +11,7 @@ export default function PricingPage() {
         background="gradient" 
         spacing="lg"
         className="text-white"
+        hero
       >
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-6">

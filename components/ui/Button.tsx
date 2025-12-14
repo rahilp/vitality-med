@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -7,6 +8,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   fullWidth?: boolean;
   icon?: React.ReactNode;
   iconPosition?: 'left' | 'right';
+  asChild?: boolean;
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -18,6 +20,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       fullWidth = false,
       icon,
       iconPosition = 'right',
+      asChild = false,
       children,
       ...props
     },
@@ -38,18 +41,16 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       lg: 'px-8 py-4 text-lg rounded-lg',
     };
 
-    return (
-      <button
-        className={cn(
-          baseStyles,
-          variants[variant],
-          sizes[size],
-          fullWidth && 'w-full',
-          className
-        )}
-        ref={ref}
-        {...props}
-      >
+    const classNames = cn(
+      baseStyles,
+      variants[variant],
+      sizes[size],
+      fullWidth && 'w-full',
+      className
+    );
+
+    const buttonContent = (
+      <>
         {icon && iconPosition === 'left' && (
           <span className="mr-2">{icon}</span>
         )}
@@ -57,6 +58,23 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {icon && iconPosition === 'right' && (
           <span className="ml-2">{icon}</span>
         )}
+      </>
+    );
+
+    if (asChild && React.isValidElement(children)) {
+      return React.cloneElement(children as React.ReactElement<any>, {
+        className: cn(classNames, (children as React.ReactElement).props.className),
+        ...props,
+      });
+    }
+
+    return (
+      <button
+        className={classNames}
+        ref={ref}
+        {...props}
+      >
+        {buttonContent}
       </button>
     );
   }

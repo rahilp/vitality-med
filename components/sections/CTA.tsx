@@ -1,4 +1,5 @@
 import { ArrowRight, Phone, Mail } from 'lucide-react';
+import Link from 'next/link';
 import { Button } from '../ui/Button';
 import { Section } from '../ui/Section';
 import Image from 'next/image';
@@ -30,13 +31,15 @@ export function CTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button 
-            variant="secondary" 
-            size="lg"
-            icon={<ArrowRight className="w-5 h-5" />}
-          >
-            Join Vitality Today
-          </Button>
+          <Link href="/get-started">
+            <Button 
+              variant="secondary" 
+              size="lg"
+              icon={<ArrowRight className="w-5 h-5" />}
+            >
+              Join Vitality Today
+            </Button>
+          </Link>
           <Button 
             variant="outline" 
             size="lg"

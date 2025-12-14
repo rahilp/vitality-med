@@ -1,4 +1,5 @@
 import { Check, Star } from 'lucide-react';
+import Link from 'next/link';
 import { Section } from '../ui/Section';
 import { Button } from '../ui/Button';
 
@@ -107,13 +108,15 @@ export function Pricing() {
               ))}
             </ul>
 
-            <Button 
-              variant={plan.popular ? 'secondary' : 'primary'}
-              fullWidth
-              size="lg"
-            >
-              Get Started
-            </Button>
+            <Link href="/get-started" className="block">
+              <Button 
+                variant={plan.popular ? 'secondary' : 'primary'}
+                fullWidth
+                size="lg"
+              >
+                Get Started
+              </Button>
+            </Link>
           </div>
         ))}
       </div>

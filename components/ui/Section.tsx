@@ -9,6 +9,7 @@ export interface SectionProps {
   spacing?: 'sm' | 'md' | 'lg' | 'xl';
   fullWidth?: boolean;
   id?: string;
+  hero?: boolean;
 }
 
 export const Section: React.FC<SectionProps> = ({
@@ -18,6 +19,7 @@ export const Section: React.FC<SectionProps> = ({
   spacing = 'lg',
   fullWidth = false,
   id,
+  hero = false,
 }) => {
   const backgroundClasses = {
     white: 'bg-white text-gray-900',
@@ -39,6 +41,7 @@ export const Section: React.FC<SectionProps> = ({
       className={cn(
         backgroundClasses[background],
         spacingClasses[spacing],
+        hero && 'pt-24 lg:pt-32',
         className
       )}
     >

@@ -28,17 +28,17 @@ export function Footer() {
               <li><Link href="/benefits" className="hover:text-gold-primary transition-colors">Benefits</Link></li>
               <li><Link href="/pricing" className="hover:text-gold-primary transition-colors">Pricing</Link></li>
               <li><Link href="/faq" className="hover:text-gold-primary transition-colors">FAQ</Link></li>
-              <li><a href="#" className="hover:text-gold-primary transition-colors">Contact</a></li>
+              <li><Link href="/contact" className="hover:text-gold-primary transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-white mb-4">Legal</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-gold-primary transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-gold-primary transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-gold-primary transition-colors">HIPAA Compliance</a></li>
-              <li><a href="#" className="hover:text-gold-primary transition-colors">Membership Agreement</a></li>
+              <li><Link href="/privacy-policy" className="hover:text-gold-primary transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms-of-service" className="hover:text-gold-primary transition-colors">Terms of Service</Link></li>
+              <li><Link href="/hipaa-compliance" className="hover:text-gold-primary transition-colors">HIPAA Compliance</Link></li>
+              <li><Link href="/membership-agreement" className="hover:text-gold-primary transition-colors">Membership Agreement</Link></li>
             </ul>
           </div>
         </div>

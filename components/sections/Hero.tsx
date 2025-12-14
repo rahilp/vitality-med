@@ -44,13 +44,15 @@ export function Hero() {
               Get Started Today
             </Button>
           </Link>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-white text-white hover:bg-white/10"
-          >
-            Learn More
-          </Button>
+          <Link href="/how-it-works">
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-white text-white hover:bg-white/10"
+            >
+              Learn More
+            </Button>
+          </Link>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">

@@ -1,0 +1,44 @@
+import { MetadataRoute } from 'next';
+import { getAllTreatmentIds } from '@/lib/treatments';
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const baseUrl = 'https://www.vitalityconcierge.com';
+  
+  // Get all treatment IDs for dynamic routes
+  const treatmentIds = getAllTreatmentIds();
+  
+  // Static pages
+  const staticPages = [
+    '',
+    '/how-it-works',
+    '/benefits',
+    '/treatments',
+    '/pricing',
+    '/faq',
+    '/contact',
+    '/get-started',
+    '/hipaa-compliance',
+    '/privacy-policy',
+    '/terms-of-service',
+    '/membership-agreement',
+  ];
+  
+  // Generate sitemap entries for static pages
+  const staticEntries: MetadataRoute.Sitemap = staticPages.map((path) => ({
+    url: `${baseUrl}${path}`,
+    lastModified: new Date(),
+    changeFrequency: path === '' ? 'weekly' : 'monthly',
+    priority: path === '' ? 1.0 : path === '/treatments' ? 0.9 : 0.8,
+  }));
+  
+  // Generate sitemap entries for treatment pages
+  const treatmentEntries: MetadataRoute.Sitemap = treatmentIds.map((id) => ({
+    url: `${baseUrl}/treatments/${id}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }));
+  
+  return [...staticEntries, ...treatmentEntries];
+}
+

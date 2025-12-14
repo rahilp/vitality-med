@@ -21,6 +21,7 @@ export function Hero() {
           fill
           className="object-cover"
           priority
+          fetchPriority="high"
         />
       </div>
       

@@ -32,8 +32,8 @@ export function Header() {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-teal-dark shadow-lg py-3' 
-          : 'bg-teal-dark py-4 lg:py-8'
+          ? 'bg-teal-dark shadow-lg py-3 md:py-3' 
+          : 'bg-teal-dark py-4 md:py-4 lg:py-8'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,10 +42,10 @@ export function Header() {
             <Image
               src={isScrolled ? "/logo_mark.svg" : "/logo.svg"}
               alt="Vitality Concierge Medicine"
-              width={isScrolled ? 48 : 160}
-              height={isScrolled ? 48 : 56}
+              width={isScrolled ? 28 : 100}
+              height={isScrolled ? 28 : 35}
               className={`w-auto transition-all duration-300 ${
-                isScrolled ? 'h-10 sm:h-9' : 'h-12 sm:h-14 lg:h-12'
+                isScrolled ? 'h-7 md:h-8' : 'h-8 md:h-10 lg:h-9'
               }`}
               priority
             />

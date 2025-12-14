@@ -8,11 +8,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
             <Image
-              src="/logo.svg"
+              src="/logo_mark.svg"
               alt="Vitality Concierge Medicine"
-              width={160}
+              width={104}
               height={47}
-              className="h-8 lg:h-8 w-auto mb-4"
+              className="h-6 w-auto mb-4"
             />
             <p className="text-gray-400 max-w-md">
               Transforming healthcare through personalized, accessible, and affordable concierge medicine. 

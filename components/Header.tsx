@@ -23,7 +23,6 @@ export function Header() {
   }, []);
 
   const navLinks = [
-    { href: '/', label: 'Home', icon: Home },
     { href: '/how-it-works', label: 'How It Works', icon: Info },
     { href: '/benefits', label: 'Benefits', icon: Heart },
     { href: '/pricing', label: 'Pricing', icon: DollarSign },

@@ -16,7 +16,7 @@ export function Hero() {
     >
       <div className="absolute inset-0 opacity-10">
         <Image
-          src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBwYXRpZW50JTIwY29uc3VsdGF0aW9ufGVufDF8fHx8MTc2NTU2NjAzOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src="/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png"
           alt="Doctor patient consultation"
           fill
           className="object-cover"

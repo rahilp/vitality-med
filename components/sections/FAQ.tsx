@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { Section } from '../ui/Section';
 
@@ -47,46 +47,86 @@ export function FAQ() {
     },
   ];
 
+  // Generate FAQ schema markup according to Google's FAQ structured data guidelines
+  // https://developers.google.com/search/docs/appearance/structured-data/faqpage
+  useEffect(() => {
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
+        },
+      })),
+    };
+
+    // Create and inject the script tag
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(faqSchema);
+    script.id = 'faq-structured-data';
+    
+    // Remove existing script if it exists (for hot reload)
+    const existingScript = document.getElementById('faq-structured-data');
+    if (existingScript) {
+      existingScript.remove();
+    }
+    
+    document.head.appendChild(script);
+
+    // Cleanup function
+    return () => {
+      const scriptToRemove = document.getElementById('faq-structured-data');
+      if (scriptToRemove) {
+        scriptToRemove.remove();
+      }
+    };
+  }, []); // Empty dependency array since faqs is static
+
   return (
     <Section background="gray" spacing="lg">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl mb-4 text-teal-primary">Frequently Asked Questions</h2>
-          <p className="text-xl text-gray-600">
-            Get answers to common questions about our concierge medicine model.
-          </p>
-        </div>
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl mb-4 text-teal-primary">Frequently Asked Questions</h2>
+            <p className="text-xl text-gray-600">
+              Get answers to common questions about our concierge medicine model.
+            </p>
+          </div>
 
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div 
-              key={index}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
-            >
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
-              >
-                <span className="text-lg text-teal-primary pr-8">{faq.question}</span>
-                <ChevronDown 
-                  className={`w-6 h-6 text-gold-primary flex-shrink-0 transition-transform ${
-                    openIndex === index ? 'rotate-180' : ''
-                  }`}
-                />
-              </button>
-              
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
               <div 
-                className={`px-6 overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? 'max-h-96 pb-5' : 'max-h-0'
-                }`}
+                key={index}
+                className="bg-white rounded-lg shadow-md overflow-hidden"
               >
-                <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                <button
+                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
+                >
+                  <span className="text-lg text-teal-primary pr-8">{faq.question}</span>
+                  <ChevronDown 
+                    className={`w-6 h-6 text-gold-primary flex-shrink-0 transition-transform ${
+                      openIndex === index ? 'rotate-180' : ''
+                    }`}
+                  />
+                </button>
+                
+                <div 
+                  className={`px-6 overflow-hidden transition-all duration-300 ${
+                    openIndex === index ? 'max-h-96 pb-5' : 'max-h-0'
+                  }`}
+                >
+                  <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </Section>
+      </Section>
+    </>
   );
 }
 

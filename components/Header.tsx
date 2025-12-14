@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Button } from './ui/Button';
 
@@ -31,15 +32,23 @@ export function Header() {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white shadow-lg py-3' 
-          : 'bg-white/95 backdrop-blur-sm py-4'
+          ? 'bg-teal-dark shadow-lg py-3' 
+          : 'bg-teal-dark py-4 lg:py-8'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            {/* Logo placeholder - replace with actual logo */}
-            <div className="h-12 sm:h-14 w-32 bg-teal-primary rounded" />
+            <Image
+              src={isScrolled ? "/logo_mark.svg" : "/logo.svg"}
+              alt="Vitality Concierge Medicine"
+              width={isScrolled ? 48 : 160}
+              height={isScrolled ? 48 : 56}
+              className={`w-auto transition-all duration-300 ${
+                isScrolled ? 'h-10 sm:h-12' : 'h-12 sm:h-14 lg:h-16'
+              }`}
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -50,8 +59,8 @@ export function Header() {
                 href={link.href}
                 className={`transition-colors ${
                   pathname === link.href
-                    ? 'text-teal-primary'
-                    : 'text-gray-700 hover:text-teal-primary'
+                    ? 'text-gold-primary'
+                    : 'text-gray-300 hover:text-gold-primary'
                 }`}
               >
                 {link.label}
@@ -60,14 +69,14 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost">Sign In</Button>
-            <Button variant="primary">Get Started</Button>
+            <Button variant="ghost" className="text-gray-300 hover:text-white hover:bg-white/10">Sign In</Button>
+            <Button variant="secondary">Get Started</Button>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-teal-primary"
+            className="md:hidden p-2 text-gold-primary"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -75,7 +84,7 @@ export function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+          <nav className="md:hidden mt-4 pb-4 border-t border-gray-700 pt-4">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <Link
@@ -84,16 +93,16 @@ export function Header() {
                   onClick={() => setMobileMenuOpen(false)}
                   className={`px-4 py-2 rounded-lg transition-colors ${
                     pathname === link.href
-                      ? 'bg-teal-primary text-white'
-                      : 'text-gray-700 hover:bg-gray-50'
+                      ? 'bg-gold-primary text-teal-primary'
+                      : 'text-gray-300 hover:bg-white/10 hover:text-gold-primary'
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
               <div className="flex flex-col gap-2 mt-2">
-                <Button variant="outline" fullWidth>Sign In</Button>
-                <Button variant="primary" fullWidth>Get Started</Button>
+                <Button variant="outline" fullWidth className="border-gray-600 text-gray-300 hover:bg-white/10">Sign In</Button>
+                <Button variant="secondary" fullWidth>Get Started</Button>
               </div>
             </div>
           </nav>

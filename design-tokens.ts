@@ -105,5 +105,6 @@ export const transitions = {
 export const gradient = {
   primary: `linear-gradient(135deg, ${colors.teal.primary} 0%, ${colors.teal.dark} 100%)`,
   hero: `linear-gradient(to bottom right, ${colors.teal.primary}, ${colors.teal.dark})`,
+  gold: `linear-gradient(135deg, ${colors.gold.light} 0%, ${colors.gold.primary} 50%, ${colors.gold.dark} 100%)`,
 };
 

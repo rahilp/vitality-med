@@ -26,8 +26,8 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const baseStyles = 'inline-flex items-center justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50';
     
     const variants = {
-      primary: 'bg-teal-primary text-white hover:bg-teal-dark',
-      secondary: 'bg-gold-primary text-teal-primary hover:bg-gold-dark',
+      primary: 'bg-teal-primary text-white hover:bg-teal-dark shadow-md hover:shadow-lg',
+      secondary: 'bg-gradient-to-br from-gold-light via-gold-primary to-gold-dark text-teal-primary font-semibold hover:shadow-xl hover:shadow-gold-primary/40 shadow-lg shadow-gold-primary/25 transition-all duration-300 hover:brightness-105',
       outline: 'border-2 border-teal-primary text-teal-primary hover:bg-teal-primary hover:text-white',
       ghost: 'text-teal-primary hover:bg-gray-50',
     };

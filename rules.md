@@ -7,6 +7,10 @@
    - Never hardcode design values (colors, spacing, etc.) directly in components
    - When adding new design values, first add them to `design-tokens.ts`, then use them in components
    - Update the tokens file when design system changes are needed
+   - **`design-tokens.ts` is the source of truth** - CSS variables in `app/globals.css` are auto-generated from this file
+   - **After updating `design-tokens.ts`, always run `npm run generate:tokens`** to update the CSS variables
+   - The generated CSS variables section in `globals.css` is marked with "Generated from design-tokens.ts - DO NOT EDIT MANUALLY" - never edit this section manually
+   - The generator script runs automatically during `npm run dev` and `npm run build`, but run it manually when making design token changes outside of those commands
 
 ## Component Reusability
 

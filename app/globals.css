@@ -6,11 +6,12 @@
 @tailwind utilities;
 
 
-:root {
+:root {  /* Generated from design-tokens.ts - DO NOT EDIT MANUALLY */
+
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
   --font-size: 16px;
-  
+
   /* Brand Colors */
   --color-teal-primary: #1a4f56;
   --color-teal-dark: #0f3339;
@@ -18,8 +19,16 @@
   --color-gold-primary: #d4af7a;
   --color-gold-dark: #c49d68;
   --color-gold-light: #e5c89f;
-  
-  --background: #ffffff;
+
+
+
+
+
+
+
+
+
+--background: #ffffff;
   --foreground: oklch(0.145 0 0);
   --card: #ffffff;
   --card-foreground: oklch(0.145 0 0);
@@ -55,8 +64,7 @@
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
+  --sidebar-ring: oklch(0.708 0 0);}
 
 .dark {
   --background: oklch(0.145 0 0);
@@ -92,8 +100,7 @@
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
-}
+  --sidebar-ring: oklch(0.439 0 0);}
 
 
 @layer base {

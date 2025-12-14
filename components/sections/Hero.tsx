@@ -1,7 +1,8 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, DollarSign, Clock, Shield } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '../ui/Button';
 import { Section } from '../ui/Section';
+import { StatCard } from '../ui/StatCard';
 import Image from 'next/image';
 
 export function Hero() {
@@ -52,19 +53,22 @@ export function Hero() {
           </Button>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
-          <div>
-            <div className="text-4xl text-gold-primary mb-2">$99</div>
-            <div className="text-gray-300">Per Month</div>
-          </div>
-          <div>
-            <div className="text-4xl text-gold-primary mb-2">24/7</div>
-            <div className="text-gray-300">Doctor Access</div>
-          </div>
-          <div>
-            <div className="text-4xl text-gold-primary mb-2">0</div>
-            <div className="text-gray-300">Insurance Needed</div>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
+          <StatCard
+            value="$99"
+            label="Per Month"
+            icon={<DollarSign className="w-6 h-6 text-gold-primary" />}
+          />
+          <StatCard
+            value="24/7"
+            label="Doctor Access"
+            icon={<Clock className="w-6 h-6 text-gold-primary" />}
+          />
+          <StatCard
+            value="0"
+            label="Insurance Needed"
+            icon={<Shield className="w-6 h-6 text-gold-primary" />}
+          />
         </div>
       </div>
     </Section>

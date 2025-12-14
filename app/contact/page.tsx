@@ -1,5 +1,6 @@
 import { Section } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
 import type { Metadata } from 'next';
 
@@ -26,6 +27,7 @@ export default function ContactPage() {
           </p>
         </div>
       </Section>
+      <Breadcrumbs items={[{ label: 'Contact', href: '/contact' }]} />
 
       <Section background="white" spacing="lg">
         <div className="max-w-6xl mx-auto">

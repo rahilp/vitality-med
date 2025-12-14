@@ -1,5 +1,6 @@
 import { Section } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Check, User, Phone, Mail, Calendar, Heart } from 'lucide-react';
 import type { Metadata } from 'next';
 
@@ -29,6 +30,7 @@ export default function GetStartedPage() {
           </p>
         </div>
       </Section>
+      <Breadcrumbs items={[{ label: 'Get Started', href: '/get-started' }]} />
 
       <Section background="white" spacing="lg">
         <div className="max-w-4xl mx-auto">

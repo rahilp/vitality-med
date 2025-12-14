@@ -1,4 +1,5 @@
 import { Section } from '@/components/ui/Section';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Shield, Lock, FileCheck, Eye } from 'lucide-react';
 import type { Metadata } from 'next';
 
@@ -26,6 +27,7 @@ export default function HIPAAPage() {
           </p>
         </div>
       </Section>
+      <Breadcrumbs items={[{ label: 'HIPAA Compliance', href: '/hipaa-compliance' }]} />
 
       <Section background="white" spacing="lg">
         <div className="max-w-4xl mx-auto">

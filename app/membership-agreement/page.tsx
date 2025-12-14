@@ -1,4 +1,5 @@
 import { Section } from '@/components/ui/Section';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { FileText, CheckCircle } from 'lucide-react';
 import type { Metadata } from 'next';
 
@@ -26,6 +27,7 @@ export default function MembershipAgreementPage() {
           </p>
         </div>
       </Section>
+      <Breadcrumbs items={[{ label: 'Membership Agreement', href: '/membership-agreement' }]} />
 
       <Section background="white" spacing="lg">
         <div className="max-w-4xl mx-auto prose prose-lg max-w-none">

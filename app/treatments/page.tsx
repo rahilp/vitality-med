@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { Section } from '@/components/ui/Section';
 import { CTA } from '@/components/sections/CTA';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Search, Stethoscope, Calendar, Shield } from 'lucide-react';
 
 import { treatments } from '@/lib/treatments';
@@ -55,6 +56,7 @@ export default function TreatmentsPage() {
           </p>
         </div>
       </Section>
+      <Breadcrumbs items={[{ label: 'Treatments', href: '/treatments' }]} />
 
       <Section background="white" spacing="lg">
         <div className="max-w-7xl mx-auto">

@@ -1,5 +1,6 @@
 import { Benefits } from '@/components/sections/Benefits';
 import { CTA } from '@/components/sections/CTA';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Clock, Heart, Shield } from 'lucide-react';
 import { Section } from '@/components/ui/Section';
 import type { Metadata } from 'next';
@@ -31,6 +32,7 @@ export default function BenefitsPage() {
           </p>
         </div>
       </Section>
+      <Breadcrumbs items={[{ label: 'Benefits', href: '/benefits' }]} />
       
       <Benefits />
       

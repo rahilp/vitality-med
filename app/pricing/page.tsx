@@ -1,5 +1,6 @@
 import { Pricing } from '@/components/sections/Pricing';
 import { CTA } from '@/components/sections/CTA';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Calculator } from 'lucide-react';
 import { Section } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
@@ -32,6 +33,7 @@ export default function PricingPage() {
           </p>
         </div>
       </Section>
+      <Breadcrumbs items={[{ label: 'Pricing', href: '/pricing' }]} />
       
       <Pricing />
       

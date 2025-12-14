@@ -1,5 +1,6 @@
 import { FAQ } from '@/components/sections/FAQ';
 import { CTA } from '@/components/sections/CTA';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { MessageCircle } from 'lucide-react';
 import { Section } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
@@ -32,6 +33,7 @@ export default function FAQPage() {
           </p>
         </div>
       </Section>
+      <Breadcrumbs items={[{ label: 'FAQ', href: '/faq' }]} />
       
       <FAQ />
       

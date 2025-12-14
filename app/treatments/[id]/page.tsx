@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { Section } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
 import { CTA } from '@/components/sections/CTA';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Stethoscope, CheckCircle, Clock, Heart } from 'lucide-react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -62,6 +63,12 @@ export default async function TreatmentPage({ params }: { params: Promise<{ id: 
           </p>
         </div>
       </Section>
+      <Breadcrumbs 
+        items={[
+          { label: 'Treatments', href: '/treatments' },
+          { label: treatment.name, href: `/treatments/${treatment.id}` }
+        ]} 
+      />
 
       <Section background="white" spacing="lg">
         <div className="max-w-4xl mx-auto">

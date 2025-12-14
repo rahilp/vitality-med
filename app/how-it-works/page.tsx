@@ -1,5 +1,6 @@
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { CTA } from '@/components/sections/CTA';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Section } from '@/components/ui/Section';
 import type { Metadata } from 'next';
 
@@ -30,6 +31,7 @@ export default function HowItWorksPage() {
           </p>
         </div>
       </Section>
+      <Breadcrumbs items={[{ label: 'How It Works', href: '/how-it-works' }]} />
       
       <HowItWorks />
       

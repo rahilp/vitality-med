@@ -1,4 +1,5 @@
 import { Section } from '@/components/ui/Section';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function TermsOfServicePage() {
           </p>
         </div>
       </Section>
+      <Breadcrumbs items={[{ label: 'Terms of Service', href: '/terms-of-service' }]} />
 
       <Section background="white" spacing="lg">
         <div className="max-w-4xl mx-auto prose prose-lg max-w-none">

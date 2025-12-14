@@ -37,7 +37,7 @@ export default function GetStartedPage() {
             <div>
               <h2 className="text-3xl sm:text-4xl mb-6 text-teal-primary">Get Started</h2>
               <p className="text-gray-600 mb-8">
-                Fill out the form below and we'll get in touch with you within 24 hours to schedule your welcome call.
+                Fill out the form below and we&apos;ll get in touch with you within 24 hours to schedule your welcome call.
               </p>
 
               <form className="space-y-6">
@@ -127,7 +127,7 @@ export default function GetStartedPage() {
 
                 <p className="text-sm text-gray-500">
                   By submitting this form, you agree to our Privacy Policy and Terms of Service. 
-                  We'll never share your information with third parties.
+                  We&apos;ll never share your information with third parties.
                 </p>
               </form>
             </div>
@@ -181,7 +181,7 @@ export default function GetStartedPage() {
               </div>
 
               <div className="mt-8 pt-8 border-t border-gray-200">
-                <h4 className="font-semibold text-gray-900 mb-4">Questions? We're Here to Help</h4>
+                <h4 className="font-semibold text-gray-900 mb-4">Questions? We&apos;re Here to Help</h4>
                 <div className="space-y-3">
                   <a 
                     href="tel:555-123-4567" 

@@ -43,7 +43,7 @@ export default function PricingPage() {
               Compare the Real Costs
             </h2>
             <p className="text-xl text-gray-600">
-              Let's look at what healthcare actually costs with traditional insurance vs. Vitality
+              Let&apos;s look at what healthcare actually costs with traditional insurance vs. Vitality
             </p>
           </div>
           
@@ -108,7 +108,7 @@ export default function PricingPage() {
           </div>
           
           <div className="mt-12 bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-2xl mb-4 text-teal-primary">What's Included vs. What's Not</h3>
+            <h3 className="text-2xl mb-4 text-teal-primary">What&apos;s Included vs. What&apos;s Not</h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h4 className="text-lg mb-3 text-gold-primary">✓ Included in Your Membership</h4>

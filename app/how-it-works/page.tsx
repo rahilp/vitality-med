@@ -57,14 +57,14 @@ export default function HowItWorksPage() {
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-xl mb-4 text-teal-primary">Personalized Care Plan</h3>
               <p className="text-gray-700">
-                Together, we'll create a healthcare plan tailored to your needs—whether that's managing chronic conditions, preventive care, or simply having peace of mind knowing your doctor is just a call away.
+                Together, we&apos;ll create a healthcare plan tailored to your needs—whether that&apos;s managing chronic conditions, preventive care, or simply having peace of mind knowing your doctor is just a call away.
               </p>
             </div>
             
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h3 className="text-xl mb-4 text-teal-primary">Ongoing Support</h3>
               <p className="text-gray-700">
-                From that point forward, you have unlimited access to your care team. Need a same-day appointment? No problem. Have a question at 10 PM? We're here. That's the Vitality difference.
+                From that point forward, you have unlimited access to your care team. Need a same-day appointment? No problem. Have a question at 10 PM? We&apos;re here. That&apos;s the Vitality difference.
               </p>
             </div>
           </div>

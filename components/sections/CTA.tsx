@@ -26,7 +26,7 @@ export function CTA() {
           Ready to Take Control of Your Health?
         </h2>
         <p className="text-xl mb-10 text-gray-200">
-          Join hundreds of patients who've discovered a better way to access healthcare. 
+          Join hundreds of patients who&apos;ve discovered a better way to access healthcare. 
           No insurance headaches, no long waits—just quality care when you need it.
         </p>
 
@@ -50,7 +50,7 @@ export function CTA() {
         </div>
 
         <div className="border-t border-white/20 pt-8">
-          <p className="mb-6 text-gray-300">Have questions? We're here to help.</p>
+          <p className="mb-6 text-gray-300">Have questions? We&apos;re here to help.</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <a href="tel:555-123-4567" className="flex items-center gap-3 hover:text-gold-primary transition-colors">
               <Phone className="w-5 h-5" />

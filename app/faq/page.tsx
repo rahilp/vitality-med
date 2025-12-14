@@ -42,7 +42,7 @@ export default function FAQPage() {
             Still Have Questions?
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            We're here to help you understand if Vitality is right for you. 
+            We&apos;re here to help you understand if Vitality is right for you. 
             No pressure, just honest answers.
           </p>
           

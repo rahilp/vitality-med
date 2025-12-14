@@ -36,7 +36,7 @@ export function HowItWorks() {
       <div className="text-center mb-16">
         <h2 className="text-4xl sm:text-5xl mb-4 text-teal-primary">How It Works</h2>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Getting quality healthcare shouldn't be complicated. Here's how simple it is to join Vitality.
+          Getting quality healthcare shouldn&apos;t be complicated. Here&apos;s how simple it is to join Vitality.
         </p>
       </div>
 

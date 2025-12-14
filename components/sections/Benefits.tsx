@@ -33,7 +33,7 @@ export function Benefits() {
     {
       icon: Phone,
       title: '24/7 Access',
-      description: 'Call, text, or video chat with your care team anytime. Health concerns don\'t wait for business hours.',
+      description: 'Call, text, or video chat with your care team anytime. Health concerns don&apos;t wait for business hours.',
     },
     {
       icon: CheckCircle,
@@ -47,7 +47,7 @@ export function Benefits() {
       <div className="text-center mb-16">
         <h2 className="text-4xl sm:text-5xl mb-4 text-teal-primary">Why Choose Vitality?</h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Traditional healthcare is broken. We're building something better—accessible, affordable, and focused on you.
+          Traditional healthcare is broken. We&apos;re building something better—accessible, affordable, and focused on you.
         </p>
       </div>
 
@@ -76,7 +76,7 @@ export function Benefits() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-gold-primary flex-shrink-0 mt-0.5" />
-                <span>Can't afford expensive health insurance premiums</span>
+                <span>Can&apos;t afford expensive health insurance premiums</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-gold-primary flex-shrink-0 mt-0.5" />

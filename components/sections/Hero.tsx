@@ -26,12 +26,13 @@ export function Hero() {
       
       <div className="relative max-w-4xl mx-auto text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-6">
-          Healthcare Without The <span className="text-gold-primary">Insurance Hassle</span>
+          Your Personal Concierge Doctor without the <span className="text-gold-primary">Insurance Hassle</span>
         </h1>
         
         <p className="text-xl sm:text-2xl mb-8 text-gray-200">
-          Access to your personal doctor, anytime you need. No insurance required. 
-          Just a simple monthly subscription for complete peace of mind.
+          Experience personalized concierge medicine and direct primary care without the insurance hassle. 
+          Access to your personal concierge doctor, anytime you need. No insurance required—just a simple monthly subscription 
+          for complete peace of mind. Affordable, transparent healthcare focused on you.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

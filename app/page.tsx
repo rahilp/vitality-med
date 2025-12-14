@@ -1,7 +1,7 @@
 import { Hero } from '@/components/sections/Hero';
-import { HowItWorks } from '@/components/sections/HowItWorks';
-import { Benefits } from '@/components/sections/Benefits';
-import { Pricing } from '@/components/sections/Pricing';
+import { HowItWorksPreview } from '@/components/sections/HowItWorksPreview';
+import { BenefitsPreview } from '@/components/sections/BenefitsPreview';
+import { PricingPreview } from '@/components/sections/PricingPreview';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTA } from '@/components/sections/CTA';
 import type { Metadata } from 'next';
@@ -19,9 +19,9 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <HowItWorks />
-      <Benefits />
-      <Pricing />
+      <HowItWorksPreview />
+      <BenefitsPreview />
+      <PricingPreview />
       <FAQ variant="homepage" />
       <CTA />
     </>

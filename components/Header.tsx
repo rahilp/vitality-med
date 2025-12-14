@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Home, Info, Heart, DollarSign, HelpCircle } from 'lucide-react';
+import { Menu, X, Home, Info, Heart, DollarSign, HelpCircle, Stethoscope } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -25,6 +25,7 @@ export function Header() {
   const navLinks = [
     { href: '/how-it-works', label: 'How It Works', icon: Info },
     { href: '/benefits', label: 'Benefits', icon: Heart },
+    { href: '/treatments', label: 'Treatments', icon: Stethoscope },
     { href: '/pricing', label: 'Pricing', icon: DollarSign },
     { href: '/faq', label: 'FAQ', icon: HelpCircle },
   ];

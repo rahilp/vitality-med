@@ -6,10 +6,7 @@ import { Section } from '@/components/ui/Section';
 import { CTA } from '@/components/sections/CTA';
 import { Search, Stethoscope, Calendar, Shield } from 'lucide-react';
 
-import { treatments, type Treatment } from '@/lib/treatments';
-
-// Re-export for backward compatibility if needed
-export { treatments, type Treatment };
+import { treatments } from '@/lib/treatments';
 
 const categories = Array.from(new Set(treatments.map(t => t.category))).sort();
 

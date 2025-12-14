@@ -14,8 +14,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
-  const treatment = getTreatmentById(params.id);
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params;
+  const treatment = getTreatmentById(id);
   
   if (!treatment) {
     return {
@@ -29,8 +30,9 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   };
 }
 
-export default function TreatmentPage({ params }: { params: { id: string } }) {
-  const treatment = getTreatmentById(params.id);
+export default async function TreatmentPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const treatment = getTreatmentById(id);
 
   if (!treatment) {
     notFound();

@@ -184,18 +184,18 @@ export default function GetStartedPage() {
                 <h4 className="font-semibold text-gray-900 mb-4">Questions? We&apos;re Here to Help</h4>
                 <div className="space-y-3">
                   <a 
-                    href="tel:555-123-4567" 
+                    href="tel:865-333-6554" 
                     className="flex items-center gap-3 text-gray-700 hover:text-teal-primary transition-colors"
                   >
                     <Phone className="w-5 h-5" />
-                    <span>(555) 123-4567</span>
+                    <span>(865) 333-6554</span>
                   </a>
                   <a 
-                    href="mailto:hello@vitalityconcierge.com" 
+                    href="mailto:hello@vitality-med.com" 
                     className="flex items-center gap-3 text-gray-700 hover:text-teal-primary transition-colors"
                   >
                     <Mail className="w-5 h-5" />
-                    <span>hello@vitalityconcierge.com</span>
+                    <span>hello@vitality-med.com</span>
                   </a>
                 </div>
               </div>

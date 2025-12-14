@@ -47,12 +47,12 @@ export default function FAQPage() {
           </p>
           
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <a href="tel:555-123-4567" className="block">
+            <a href="tel:865-333-6554" className="block">
               <Button variant="primary" size="lg" fullWidth>
-                Call Us: (555) 123-4567
+                Call Us: (865) 333-6554
               </Button>
             </a>
-            <a href="mailto:hello@vitalityconcierge.com" className="block">
+            <a href="mailto:hello@vitality-med.com" className="block">
               <Button variant="secondary" size="lg" fullWidth>
                 Email Us
               </Button>

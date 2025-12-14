@@ -139,9 +139,9 @@ export default function HIPAAPage() {
               <div className="bg-gray-50 p-6 rounded-lg mt-4">
                 <p className="mb-2"><strong>Privacy Officer</strong></p>
                 <p className="mb-2">Vitality Concierge Medicine</p>
-                <p className="mb-2">Phone: (555) 123-4567</p>
-                <p className="mb-2">Email: privacy@vitalityconcierge.com</p>
-                <p>Address: [Your Office Address]</p>
+                <p className="mb-2">Phone: (865) 333-6554</p>
+                <p className="mb-2">Email: hello@vitality-med.com</p>
+                <p>Address: 10321 Kingston Pike, Knoxville, TN 37922</p>
               </div>
               <p className="mt-4">
                 You also have the right to file a complaint with the U.S. Department of Health and Human Services Office for Civil Rights if you believe your privacy rights have been violated.

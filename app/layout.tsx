@@ -16,7 +16,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vitalityconcierge.com'), // Update with your actual domain
+  metadataBase: new URL('https://www.vitalityconcierge.com'), // Update with your actual domain
   title: {
     default: 'Vitality Concierge Medicine',
     template: '%s | Vitality Concierge Medicine',

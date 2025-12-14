@@ -33,16 +33,16 @@ export interface BusinessSchema {
 export const businessSchema: BusinessSchema = {
   name: 'Vitality Concierge Medicine by Valencia',
   description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine.',
-  url: 'https://vitalityconcierge.com', // Update with your actual domain
-  logo: 'https://vitalityconcierge.com/logo.svg', // Update with your actual logo URL
-  image: 'https://vitalityconcierge.com/logo.svg', // Update with your actual image URL
-  telephone: '+15551234567', // Update with your actual phone number
-  email: 'hello@vitalityconcierge.com', // Update with your actual email
+  url: 'https://www.vitalityconcierge.com', // Update with your actual domain
+  logo: 'https://www.vitalityconcierge.com/logo.svg', // Update with your actual logo URL
+  image: 'https://www.vitalityconcierge.com/logo.svg', // Update with your actual image URL
+  telephone: '+18653336554', // Update with your actual phone number
+  email: 'hello@vitality-med.com', // Update with your actual email
   address: {
-    streetAddress: '123 Main Street', // Update with your actual address
-    addressLocality: 'City',
-    addressRegion: 'State',
-    postalCode: '12345',
+    streetAddress: '10321 Kingston Pike', // Update with your actual address
+    addressLocality: 'Knoxville',
+    addressRegion: 'TN',
+    postalCode: '37922',
     addressCountry: 'US',
   },
   priceRange: '$$', // Price range indicator ($-$$$)

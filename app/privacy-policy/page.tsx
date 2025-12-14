@@ -134,9 +134,9 @@ export default function PrivacyPolicyPage() {
               </p>
               <div className="bg-gray-50 p-6 rounded-lg mt-4">
                 <p className="mb-2"><strong>Vitality Concierge Medicine</strong></p>
-                <p className="mb-2">Phone: (555) 123-4567</p>
-                <p className="mb-2">Email: privacy@vitalityconcierge.com</p>
-                <p>Address: [Your Office Address]</p>
+                <p className="mb-2">Phone: (865) 333-6554</p>
+                <p className="mb-2">Email: hello@vitality-med.com</p>
+                <p>Address: 10321 Kingston Pike, Knoxville, TN 37922</p>
               </div>
             </section>
           </div>

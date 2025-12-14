@@ -52,13 +52,13 @@ export function CTA() {
         <div className="border-t border-white/20 pt-8">
           <p className="mb-6 text-gray-300">Have questions? We&apos;re here to help.</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <a href="tel:555-123-4567" className="flex items-center gap-3 hover:text-gold-primary transition-colors">
+            <a href="tel:865-333-6554" className="flex items-center gap-3 hover:text-gold-primary transition-colors">
               <Phone className="w-5 h-5" />
-              <span>(555) 123-4567</span>
+              <span>(865) 333-6554</span>
             </a>
-            <a href="mailto:hello@vitalityconcierge.com" className="flex items-center gap-3 hover:text-gold-primary transition-colors">
+            <a href="mailto:hello@vitality-med.com" className="flex items-center gap-3 hover:text-gold-primary transition-colors">
               <Mail className="w-5 h-5" />
-              <span>hello@vitalityconcierge.com</span>
+              <span>hello@vitality-med.com</span>
             </a>
           </div>
         </div>

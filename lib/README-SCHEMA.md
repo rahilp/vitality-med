@@ -14,7 +14,7 @@ Simply update the `businessSchema` object with your actual business information:
 export const businessSchema: BusinessSchema = {
   name: 'Vitality Concierge Medicine by Valencia',
   description: 'Your business description...',
-  url: 'https://vitalityconcierge.com', // ← Update with your domain
+  url: 'https://www.vitalityconcierge.com', // ← Update with your domain
   telephone: '+15551234567', // ← Update with your phone
   email: 'hello@vitalityconcierge.com', // ← Update with your email
   address: {

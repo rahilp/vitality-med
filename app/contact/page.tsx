@@ -44,8 +44,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
-                    <a href="tel:555-123-4567" className="text-gray-600 hover:text-teal-primary transition-colors">
-                      (555) 123-4567
+                    <a href="tel:865-333-6554" className="text-gray-600 hover:text-teal-primary transition-colors">
+                      (865) 333-6554
                     </a>
                     <p className="text-sm text-gray-500 mt-1">Mon-Fri, 8am-6pm EST</p>
                   </div>
@@ -57,8 +57,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Email</h3>
-                    <a href="mailto:hello@vitalityconcierge.com" className="text-gray-600 hover:text-teal-primary transition-colors">
-                      hello@vitalityconcierge.com
+                    <a href="mailto:hello@vitality-med.com" className="text-gray-600 hover:text-teal-primary transition-colors">
+                      hello@vitality-med.com
                     </a>
                     <p className="text-sm text-gray-500 mt-1">We typically respond within 24 hours</p>
                   </div>
@@ -71,9 +71,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Office</h3>
                     <p className="text-gray-600">
-                      [Your Office Address]
+                      10321 Kingston Pike
                       <br />
-                      [City, State ZIP]
+                      Knoxville, TN 37922
                     </p>
                     <p className="text-sm text-gray-500 mt-1">By appointment only</p>
                   </div>

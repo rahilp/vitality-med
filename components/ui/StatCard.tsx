@@ -25,11 +25,11 @@ export const StatCard: React.FC<StatCardProps> = ({
       {icon && (
         <div className="flex justify-center mb-4">
           <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-gold-primary/20 to-gold-dark/20 flex items-center justify-center border border-gold-primary/30">
-            {React.cloneElement(icon as React.ReactElement, {
+            {React.cloneElement(icon as React.ReactElement<{ className?: string; strokeWidth?: number; fill?: string }>, {
               className: 'w-5 h-5 sm:w-6 sm:h-6 text-gold-primary',
               strokeWidth: 2,
               fill: 'none',
-            })}
+            } as any)}
           </div>
         </div>
       )}

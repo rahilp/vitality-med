@@ -16,7 +16,7 @@ export function Pricing() {
   const plans: Plan[] = [
     {
       name: 'Individual',
-      price: '$99',
+      price: '$149',
       period: 'per month',
       description: 'Perfect for individuals seeking direct access to quality healthcare',
       features: [
@@ -33,7 +33,7 @@ export function Pricing() {
     },
     {
       name: 'Family',
-      price: '$249',
+      price: '$499',
       period: 'per month',
       description: 'Comprehensive care for your entire household',
       features: [

@@ -12,7 +12,7 @@ export function Footer() {
               alt="Vitality Concierge Medicine"
               width={160}
               height={47}
-              className="h-12 w-auto mb-4"
+              className="h-8 lg:h-8 w-auto mb-4"
             />
             <p className="text-gray-400 max-w-md">
               Transforming healthcare through personalized, accessible, and affordable concierge medicine. 

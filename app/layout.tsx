@@ -15,8 +15,36 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Vitality Concierge Medicine',
+  metadataBase: new URL('https://vitalityconcierge.com'), // Update with your actual domain
+  title: {
+    default: 'Vitality Concierge Medicine',
+    template: '%s | Vitality Concierge Medicine',
+  },
   description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine.',
+  keywords: ['concierge medicine', 'direct primary care', 'healthcare without insurance', 'affordable healthcare', 'personalized medicine'],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'Vitality Concierge Medicine',
+    title: 'Vitality Concierge Medicine',
+    description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vitality Concierge Medicine',
+    description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({

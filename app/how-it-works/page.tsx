@@ -1,6 +1,15 @@
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { CTA } from '@/components/sections/CTA';
 import { Section } from '@/components/ui/Section';
+import type { Metadata } from 'next';
+
+// Force static generation for this page
+export const dynamic = 'force-static';
+
+export const metadata: Metadata = {
+  title: 'How It Works | Vitality Concierge Medicine',
+  description: 'Getting quality healthcare should not be complicated. Learn how simple it is to join Vitality - no complex paperwork, no insurance verification, just straightforward access to quality healthcare.',
+};
 
 export default function HowItWorksPage() {
   return (

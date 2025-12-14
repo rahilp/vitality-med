@@ -3,6 +3,15 @@ import { CTA } from '@/components/sections/CTA';
 import { MessageCircle } from 'lucide-react';
 import { Section } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
+import type { Metadata } from 'next';
+
+// Force static generation for this page
+export const dynamic = 'force-static';
+
+export const metadata: Metadata = {
+  title: 'FAQ | Vitality Concierge Medicine',
+  description: 'Get answers to common questions about our concierge medicine model. Learn everything you need to know about Vitality Concierge Medicine and how direct primary care works.',
+};
 
 export default function FAQPage() {
   return (

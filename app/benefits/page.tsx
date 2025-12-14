@@ -2,6 +2,15 @@ import { Benefits } from '@/components/sections/Benefits';
 import { CTA } from '@/components/sections/CTA';
 import { Clock, Heart, Shield } from 'lucide-react';
 import { Section } from '@/components/ui/Section';
+import type { Metadata } from 'next';
+
+// Force static generation for this page
+export const dynamic = 'force-static';
+
+export const metadata: Metadata = {
+  title: 'Benefits | Vitality Concierge Medicine',
+  description: 'Experience the freedom of direct primary care - where you come first, not insurance companies. Learn about the Vitality difference and why traditional healthcare is broken.',
+};
 
 export default function BenefitsPage() {
   return (

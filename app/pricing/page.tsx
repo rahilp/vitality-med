@@ -3,6 +3,15 @@ import { CTA } from '@/components/sections/CTA';
 import { Calculator } from 'lucide-react';
 import { Section } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
+import type { Metadata } from 'next';
+
+// Force static generation for this page
+export const dynamic = 'force-static';
+
+export const metadata: Metadata = {
+  title: 'Pricing | Vitality Concierge Medicine',
+  description: 'Simple, transparent pricing. No deductibles. No copays. No surprise bills. Just quality healthcare at a price you can afford. Individual plans from $99/month, Family plans from $249/month.',
+};
 
 export default function PricingPage() {
   return (

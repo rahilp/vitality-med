@@ -1,6 +1,15 @@
 import { Section } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
 import { Check, User, Phone, Mail, Calendar, Heart } from 'lucide-react';
+import type { Metadata } from 'next';
+
+// Force static generation for this page
+export const dynamic = 'force-static';
+
+export const metadata: Metadata = {
+  title: 'Get Started | Vitality Concierge Medicine',
+  description: 'Join Vitality Concierge Medicine today. Fill out the form and we will get in touch with you within 24 hours to schedule your welcome call and start your journey to better healthcare.',
+};
 
 export default function GetStartedPage() {
   return (

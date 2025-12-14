@@ -69,7 +69,9 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" className="text-gray-300 hover:text-white hover:bg-white/10">Sign In</Button>
+            <Link href="/login">
+              <Button variant="ghost" className="text-gray-300 hover:text-white hover:bg-white/10">Sign In</Button>
+            </Link>
             <Link href="/get-started">
               <Button variant="secondary">Get Started</Button>
             </Link>
@@ -103,7 +105,9 @@ export function Header() {
                 </Link>
               ))}
               <div className="flex flex-col gap-2 mt-2">
-                <Button variant="outline" fullWidth className="border-gray-600 text-gray-300 hover:bg-white/10">Sign In</Button>
+                <Link href="/login" className="block">
+                  <Button variant="outline" fullWidth className="border-gray-600 text-gray-300 hover:bg-white/10">Sign In</Button>
+                </Link>
                 <Link href="/get-started" className="block">
                   <Button variant="secondary" fullWidth>Get Started</Button>
                 </Link>

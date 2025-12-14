@@ -113,19 +113,19 @@ export function Footer() {
         {/* Treatments Section */}
         <div className="border-t border-gray-700 pt-8 mb-8">
           <h3 className="text-white mb-6 text-center">Our Services & Treatments</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-4 gap-y-1 text-xs">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-4 gap-y-3 sm:gap-y-1 text-xs sm:text-xs">
             {treatments.map((treatment) => (
               <Link
                 key={treatment.id}
                 href={`/treatments/${treatment.id}`}
-                className="text-gray-400 hover:text-gold-primary transition-colors"
+                className="text-gray-400 hover:text-gold-primary transition-colors py-2 sm:py-0 block"
               >
                 {treatment.name}
               </Link>
             ))}
             <Link
               href="/treatments"
-              className="text-gold-primary hover:text-gold-light transition-colors font-semibold"
+              className="text-gold-primary hover:text-gold-light transition-colors font-semibold py-2 sm:py-0 block"
             >
               View All Treatments →
             </Link>

@@ -74,7 +74,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-white">
         <StructuredData />
         <Header />
-        <main className="pt-16">
+        <main className="pt-16 sm:pt-24 lg:pt-28">
           {children}
         </main>
         <Footer />

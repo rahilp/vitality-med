@@ -31,13 +31,35 @@ export function Header() {
   ];
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-teal-dark shadow-lg py-3 md:py-3' 
-          : 'bg-teal-dark py-4 md:py-4 lg:py-8'
-      }`}
-    >
+    <>
+      {/* Valencia Medspa Banner */}
+      <div className={`fixed top-0 left-0 right-0 z-50 bg-teal-dark transition-all duration-300 ${
+        isScrolled ? 'opacity-0 -translate-y-full pointer-events-none' : 'opacity-100 translate-y-0'
+      }`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center py-2.5 sm:py-3">
+            <p className="text-[11px] sm:text-xs text-white text-center">
+              Looking for aesthetic services?{' '}
+              <a
+                href="https://www.valencia-med.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold-primary hover:text-gold-light font-semibold transition-colors duration-300 underline decoration-gold-primary hover:decoration-gold-light underline-offset-2"
+              >
+                Visit Valencia Medspa
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <header 
+        className={`fixed left-0 right-0 z-40 transition-all duration-300 ${
+          isScrolled 
+            ? 'top-0 bg-teal-dark shadow-lg py-3 md:py-3' 
+            : 'top-[36px] sm:top-[40px] bg-teal-dark py-4 md:py-4 lg:py-8'
+        }`}
+      >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center group">
@@ -202,6 +224,7 @@ export function Header() {
         )}
       </div>
     </header>
+    </>
   );
 }
 

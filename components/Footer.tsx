@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { ExternalLink } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -39,6 +40,30 @@ export function Footer() {
               <li><a href="#" className="hover:text-gold-primary transition-colors">HIPAA Compliance</a></li>
               <li><a href="#" className="hover:text-gold-primary transition-colors">Membership Agreement</a></li>
             </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-700 pt-8 mb-8">
+          <h3 className="text-white mb-4 text-center">Part of the Valencia Family</h3>
+          <div className="flex flex-wrap justify-center gap-6">
+            <a
+              href="https://www.valenciaweightloss.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-gold-primary transition-colors inline-flex items-center gap-1.5"
+            >
+              Valencia Weight Loss
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+            <a
+              href="https://www.valencia-med.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-gold-primary transition-colors inline-flex items-center gap-1.5"
+            >
+              Valencia Medspa
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
           </div>
         </div>
 

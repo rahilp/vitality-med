@@ -40,13 +40,6 @@ export function CTA() {
               Join Vitality Today
             </Button>
           </Link>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-white text-white hover:bg-white/10"
-          >
-            Schedule a Tour
-          </Button>
         </div>
 
         <div className="border-t border-white/20 pt-8">

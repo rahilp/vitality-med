@@ -20,3 +20,4 @@ export function StructuredData({ schema }: StructuredDataProps) {
 }
 
 
+

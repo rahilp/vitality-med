@@ -57,11 +57,20 @@ export const metadata: Metadata = {
     siteName: 'Vitality Concierge Medicine',
     title: 'Concierge Doctor in Knoxville TN | Vitality Concierge Medicine',
     description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine in Knoxville, TN.',
+    images: [
+      {
+        url: '/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+        width: 1200,
+        height: 630,
+        alt: 'Vitality Concierge Medicine - Concierge Doctor in Knoxville, TN',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Concierge Doctor in Knoxville TN | Vitality Concierge Medicine',
     description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine in Knoxville, TN.',
+    images: ['/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png'],
   },
   robots: {
     index: true,

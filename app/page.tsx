@@ -11,9 +11,19 @@ import type { Metadata } from 'next';
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-  title: 'Vitality Concierge Medicine | Healthcare Without The Insurance Hassle',
-  description: 'Access to your personal doctor, anytime you need. No insurance required. Just a simple monthly subscription for complete peace of mind. Direct primary care with personalized, accessible, and affordable concierge medicine.',
-  keywords: 'concierge medicine, direct primary care, healthcare without insurance, affordable healthcare, personalized medicine, Valencia',
+  title: 'Concierge Doctor in Knoxville | Concierge Medicine & Direct Primary Care Knoxville TN',
+  description: 'Find the best concierge doctor in Knoxville, TN. Experience personalized concierge medicine and direct primary care without insurance hassles. Same-day appointments, 24/7 access, and affordable monthly membership.',
+  keywords: 'Concierge Doctor in Knoxville, Concierge Medicine in Knoxville, Direct Primary Care in Knoxville, concierge doctor Knoxville TN, direct primary care Knoxville Tennessee, concierge medicine Knoxville, primary care doctor Knoxville, personal doctor Knoxville',
+  openGraph: {
+    title: 'Concierge Doctor in Knoxville | Concierge Medicine & Direct Primary Care',
+    description: 'Find the best concierge doctor in Knoxville, TN. Experience personalized concierge medicine and direct primary care without insurance hassles.',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Concierge Doctor in Knoxville | Concierge Medicine & Direct Primary Care',
+    description: 'Find the best concierge doctor in Knoxville, TN. Experience personalized concierge medicine and direct primary care without insurance hassles.',
+  },
 };
 
 export default function HomePage() {

@@ -10,8 +10,18 @@ import type { Metadata } from 'next';
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-  title: 'Pricing | Vitality Concierge Medicine',
-  description: 'Simple, transparent pricing. No deductibles. No copays. No surprise bills. Just quality healthcare at a price you can afford. Individual plans from $99/month, Family plans from $249/month.',
+  title: 'Concierge Medicine Cost in Knoxville TN | Direct Primary Care Pricing',
+  description: 'Affordable concierge medicine pricing in Knoxville, TN. Transparent direct primary care costs with individual and family plans available. No deductibles, no copays, no surprise bills.',
+  keywords: 'concierge medicine cost Knoxville, direct primary care pricing Knoxville TN, affordable concierge doctor Knoxville, concierge medicine price Knoxville Tennessee, direct primary care cost Knoxville, concierge doctor pricing Knoxville, how much does concierge medicine cost Knoxville',
+  openGraph: {
+    title: 'Concierge Medicine Cost in Knoxville TN | Direct Primary Care Pricing',
+    description: 'Affordable concierge medicine pricing in Knoxville, TN. Transparent direct primary care costs with individual and family plans available.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Concierge Medicine Cost in Knoxville TN | Direct Primary Care Pricing',
+    description: 'Affordable concierge medicine pricing in Knoxville, TN. Transparent direct primary care costs with flexible plans available.',
+  },
 };
 
 export default function PricingPage() {

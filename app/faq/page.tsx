@@ -10,8 +10,18 @@ import type { Metadata } from 'next';
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-  title: 'FAQ | Vitality Concierge Medicine',
-  description: 'Get answers to common questions about our concierge medicine model. Learn everything you need to know about Vitality Concierge Medicine and how direct primary care works.',
+  title: 'Concierge Medicine FAQ Knoxville TN | Direct Primary Care Questions',
+  description: 'Get answers to common questions about concierge medicine in Knoxville, TN. Learn everything about direct primary care, membership costs, services included, and how it differs from traditional insurance-based healthcare.',
+  keywords: 'concierge medicine questions Knoxville, direct primary care FAQ Knoxville TN, concierge doctor answers Knoxville, concierge medicine FAQ Knoxville Tennessee, questions about direct primary care Knoxville, concierge medicine information Knoxville',
+  openGraph: {
+    title: 'Concierge Medicine FAQ Knoxville TN | Direct Primary Care Questions',
+    description: 'Get answers to common questions about concierge medicine in Knoxville, TN. Learn everything about direct primary care and membership.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Concierge Medicine FAQ Knoxville TN | Direct Primary Care Questions',
+    description: 'Get answers to common questions about concierge medicine in Knoxville, TN. Learn everything about direct primary care.',
+  },
 };
 
 export default function FAQPage() {

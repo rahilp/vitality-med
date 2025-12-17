@@ -9,8 +9,18 @@ import type { Metadata } from 'next';
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-  title: 'Benefits | Vitality Concierge Medicine',
-  description: 'Experience the freedom of direct primary care - where you come first, not insurance companies. Learn about the Vitality difference and why traditional healthcare is broken.',
+  title: 'Benefits of Concierge Medicine in Knoxville TN | Direct Primary Care Advantages',
+  description: 'Discover the benefits of concierge medicine in Knoxville, TN. Learn why direct primary care offers better access, longer appointments, and personalized care compared to traditional insurance-based healthcare.',
+  keywords: 'benefits of concierge medicine Knoxville, concierge medicine advantages Knoxville TN, direct primary care benefits Knoxville, concierge doctor benefits Knoxville Tennessee, why concierge medicine Knoxville, advantages of direct primary care Knoxville',
+  openGraph: {
+    title: 'Benefits of Concierge Medicine in Knoxville TN | Direct Primary Care Advantages',
+    description: 'Discover the benefits of concierge medicine in Knoxville, TN. Learn why direct primary care offers better access, longer appointments, and personalized care.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Benefits of Concierge Medicine in Knoxville TN',
+    description: 'Discover the benefits of concierge medicine in Knoxville, TN. Learn why direct primary care offers better access and personalized care.',
+  },
 };
 
 export default function BenefitsPage() {

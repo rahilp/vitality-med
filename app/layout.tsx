@@ -19,11 +19,22 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.vitalityconcierge.com'), // Update with your actual domain
   title: {
-    default: 'Vitality Concierge Medicine',
+    default: 'Concierge Doctor in Knoxville TN | Vitality Concierge Medicine',
     template: '%s | Vitality Concierge Medicine',
   },
-  description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine.',
-  keywords: ['concierge medicine', 'direct primary care', 'healthcare without insurance', 'affordable healthcare', 'personalized medicine'],
+  description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine in Knoxville, TN. Same-day appointments, 24/7 access, transparent pricing.',
+  keywords: [
+    'concierge medicine',
+    'direct primary care',
+    'healthcare without insurance',
+    'affordable healthcare',
+    'personalized medicine',
+    'concierge doctor Knoxville',
+    'concierge medicine Knoxville TN',
+    'direct primary care Knoxville',
+    'primary care doctor Knoxville',
+    'personal doctor Knoxville Tennessee',
+  ],
   icons: {
     icon: [
       { url: '/icon.png', sizes: 'any' },
@@ -44,13 +55,13 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     siteName: 'Vitality Concierge Medicine',
-    title: 'Vitality Concierge Medicine',
-    description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine.',
+    title: 'Concierge Doctor in Knoxville TN | Vitality Concierge Medicine',
+    description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine in Knoxville, TN.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vitality Concierge Medicine',
-    description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine.',
+    title: 'Concierge Doctor in Knoxville TN | Vitality Concierge Medicine',
+    description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine in Knoxville, TN.',
   },
   robots: {
     index: true,

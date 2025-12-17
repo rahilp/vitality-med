@@ -8,8 +8,18 @@ import type { Metadata } from 'next';
 export const dynamic = 'force-static';
 
 export const metadata: Metadata = {
-  title: 'How It Works | Vitality Concierge Medicine',
-  description: 'Getting quality healthcare should not be complicated. Learn how simple it is to join Vitality - no complex paperwork, no insurance verification, just straightforward access to quality healthcare.',
+  title: 'How Concierge Medicine Works in Knoxville TN | Direct Primary Care Process',
+  description: 'Learn how concierge medicine works in Knoxville, TN. Simple steps to join our direct primary care practice - no insurance verification, no complex paperwork. Get started with personalized healthcare today.',
+  keywords: 'how concierge medicine works Knoxville, direct primary care process Knoxville TN, concierge doctor membership Knoxville, how to join concierge medicine Knoxville, direct primary care how it works Knoxville Tennessee, concierge medicine process Knoxville',
+  openGraph: {
+    title: 'How Concierge Medicine Works in Knoxville TN | Direct Primary Care Process',
+    description: 'Learn how concierge medicine works in Knoxville, TN. Simple steps to join our direct primary care practice - no insurance verification needed.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How Concierge Medicine Works in Knoxville TN',
+    description: 'Learn how concierge medicine works in Knoxville, TN. Simple steps to join our direct primary care practice.',
+  },
 };
 
 export default function HowItWorksPage() {

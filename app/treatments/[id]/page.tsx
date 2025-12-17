@@ -26,8 +26,25 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   }
 
   return {
-    title: `${treatment.name} | Vitality Concierge Medicine`,
-    description: `${treatment.description} Learn how Vitality Concierge Medicine provides personalized care for ${treatment.name.toLowerCase()} in Knoxville, TN.`,
+    title: `${treatment.name} in Knoxville TN | Concierge Medicine Treatment`,
+    description: `${treatment.description} Get personalized ${treatment.name.toLowerCase()} care from your concierge doctor in Knoxville, TN. Same-day appointments, comprehensive treatment, and 24/7 access included in your direct primary care membership.`,
+    keywords: [
+      `${treatment.name} Knoxville`,
+      `${treatment.name} Knoxville TN`,
+      `concierge doctor ${treatment.name.toLowerCase()} Knoxville`,
+      `direct primary care ${treatment.name.toLowerCase()} Knoxville Tennessee`,
+      `${treatment.category} treatment Knoxville`,
+      `concierge medicine ${treatment.name.toLowerCase()} Knoxville`,
+    ],
+    openGraph: {
+      title: `${treatment.name} in Knoxville TN | Concierge Medicine Treatment`,
+      description: `Get personalized ${treatment.name.toLowerCase()} care from your concierge doctor in Knoxville, TN. Same-day appointments and comprehensive treatment.`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${treatment.name} in Knoxville TN | Concierge Medicine Treatment`,
+      description: `Get personalized ${treatment.name.toLowerCase()} care from your concierge doctor in Knoxville, TN.`,
+    },
   };
 }
 

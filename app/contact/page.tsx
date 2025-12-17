@@ -5,8 +5,18 @@ import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Vitality Concierge Medicine',
-  description: 'Get in touch with Vitality Concierge Medicine. We&apos;re here to answer your questions and help you get started on your journey to better healthcare.',
+  title: 'Contact Concierge Doctor in Knoxville TN | Schedule Appointment',
+  description: 'Contact our concierge medicine practice in Knoxville, TN. Call (865) 333-6554 or email us to schedule an appointment, ask questions, or learn more about our direct primary care services.',
+  keywords: 'contact concierge doctor Knoxville, schedule appointment Knoxville TN, concierge medicine contact Knoxville, direct primary care contact Knoxville Tennessee, concierge doctor phone Knoxville, book appointment concierge medicine Knoxville',
+  openGraph: {
+    title: 'Contact Concierge Doctor in Knoxville TN | Schedule Appointment',
+    description: 'Contact our concierge medicine practice in Knoxville, TN. Call (865) 333-6554 or email us to schedule an appointment or learn more.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Concierge Doctor in Knoxville TN | Schedule Appointment',
+    description: 'Contact our concierge medicine practice in Knoxville, TN. Call (865) 333-6554 or email us to schedule an appointment.',
+  },
 };
 
 export default function ContactPage() {

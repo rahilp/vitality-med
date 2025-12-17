@@ -37,13 +37,27 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       `concierge medicine ${treatment.name.toLowerCase()} Knoxville`,
     ],
     openGraph: {
+      url: `https://www.vitality-med.com/treatments/${id}`,
+      type: 'website',
       title: `${treatment.name} in Knoxville TN | Concierge Medicine Treatment`,
       description: `Get personalized ${treatment.name.toLowerCase()} care from your concierge doctor in Knoxville, TN. Same-day appointments and comprehensive treatment.`,
+      images: [
+        {
+          url: 'https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+          width: 1200,
+          height: 630,
+          alt: `${treatment.name} in Knoxville, TN`,
+        },
+      ],
+    },
+    other: {
+      'og:logo': 'https://www.vitality-med.com/logo.svg',
     },
     twitter: {
       card: 'summary_large_image',
       title: `${treatment.name} in Knoxville TN | Concierge Medicine Treatment`,
       description: `Get personalized ${treatment.name.toLowerCase()} care from your concierge doctor in Knoxville, TN.`,
+      images: ['https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png'],
     },
   };
 }

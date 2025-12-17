@@ -12,13 +12,27 @@ export const metadata: Metadata = {
   description: 'Learn how concierge medicine works in Knoxville, TN. Simple steps to join our direct primary care practice - no insurance verification, no complex paperwork. Get started with personalized healthcare today.',
   keywords: 'how concierge medicine works Knoxville, direct primary care process Knoxville TN, concierge doctor membership Knoxville, how to join concierge medicine Knoxville, direct primary care how it works Knoxville Tennessee, concierge medicine process Knoxville',
   openGraph: {
+    url: 'https://www.vitality-med.com/how-it-works',
+    type: 'website',
     title: 'How Concierge Medicine Works in Knoxville TN | Direct Primary Care Process',
     description: 'Learn how concierge medicine works in Knoxville, TN. Simple steps to join our direct primary care practice - no insurance verification needed.',
+    images: [
+      {
+        url: 'https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+        width: 1200,
+        height: 630,
+        alt: 'How Concierge Medicine Works in Knoxville, TN',
+      },
+    ],
+  },
+  other: {
+    'og:logo': 'https://www.vitality-med.com/logo.svg',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How Concierge Medicine Works in Knoxville TN',
     description: 'Learn how concierge medicine works in Knoxville, TN. Simple steps to join our direct primary care practice.',
+    images: ['https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png'],
   },
 };
 

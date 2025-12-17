@@ -14,13 +14,27 @@ export const metadata: Metadata = {
   description: 'Affordable concierge medicine pricing in Knoxville, TN. Transparent direct primary care costs with individual and family plans available. No deductibles, no copays, no surprise bills.',
   keywords: 'concierge medicine cost Knoxville, direct primary care pricing Knoxville TN, affordable concierge doctor Knoxville, concierge medicine price Knoxville Tennessee, direct primary care cost Knoxville, concierge doctor pricing Knoxville, how much does concierge medicine cost Knoxville',
   openGraph: {
+    url: 'https://www.vitality-med.com/pricing',
+    type: 'website',
     title: 'Concierge Medicine Cost in Knoxville TN | Direct Primary Care Pricing',
     description: 'Affordable concierge medicine pricing in Knoxville, TN. Transparent direct primary care costs with individual and family plans available.',
+    images: [
+      {
+        url: 'https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+        width: 1200,
+        height: 630,
+        alt: 'Concierge Medicine Pricing in Knoxville, TN',
+      },
+    ],
+  },
+  other: {
+    'og:logo': 'https://www.vitality-med.com/logo.svg',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Concierge Medicine Cost in Knoxville TN | Direct Primary Care Pricing',
     description: 'Affordable concierge medicine pricing in Knoxville, TN. Transparent direct primary care costs with flexible plans available.',
+    images: ['https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png'],
   },
 };
 

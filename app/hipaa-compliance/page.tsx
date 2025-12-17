@@ -6,6 +6,23 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'HIPAA Compliance | Vitality Concierge Medicine',
   description: 'Learn about Vitality Concierge Medicine&apos;s commitment to HIPAA compliance and protecting your health information privacy.',
+  openGraph: {
+    url: 'https://www.vitality-med.com/hipaa-compliance',
+    type: 'website',
+    title: 'HIPAA Compliance | Vitality Concierge Medicine',
+    description: 'Learn about Vitality Concierge Medicine\'s commitment to HIPAA compliance and protecting your health information privacy.',
+    images: [
+      {
+        url: 'https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+        width: 1200,
+        height: 630,
+        alt: 'HIPAA Compliance - Vitality Concierge Medicine',
+      },
+    ],
+  },
+  other: {
+    'og:logo': 'https://www.vitality-med.com/logo.svg',
+  },
 };
 
 export default function HIPAAPage() {

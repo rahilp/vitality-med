@@ -5,6 +5,23 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms of Service | Vitality Concierge Medicine',
   description: 'Terms of Service for Vitality Concierge Medicine. Read our terms and conditions for using our services.',
+  openGraph: {
+    url: 'https://www.vitality-med.com/terms-of-service',
+    type: 'website',
+    title: 'Terms of Service | Vitality Concierge Medicine',
+    description: 'Terms of Service for Vitality Concierge Medicine. Read our terms and conditions for using our services.',
+    images: [
+      {
+        url: 'https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+        width: 1200,
+        height: 630,
+        alt: 'Terms of Service - Vitality Concierge Medicine',
+      },
+    ],
+  },
+  other: {
+    'og:logo': 'https://www.vitality-med.com/logo.svg',
+  },
 };
 
 export default function TermsOfServicePage() {

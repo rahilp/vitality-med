@@ -13,13 +13,27 @@ export const metadata: Metadata = {
   description: 'Discover the benefits of concierge medicine in Knoxville, TN. Learn why direct primary care offers better access, longer appointments, and personalized care compared to traditional insurance-based healthcare.',
   keywords: 'benefits of concierge medicine Knoxville, concierge medicine advantages Knoxville TN, direct primary care benefits Knoxville, concierge doctor benefits Knoxville Tennessee, why concierge medicine Knoxville, advantages of direct primary care Knoxville',
   openGraph: {
+    url: 'https://www.vitality-med.com/benefits',
+    type: 'website',
     title: 'Benefits of Concierge Medicine in Knoxville TN | Direct Primary Care Advantages',
     description: 'Discover the benefits of concierge medicine in Knoxville, TN. Learn why direct primary care offers better access, longer appointments, and personalized care.',
+    images: [
+      {
+        url: 'https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+        width: 1200,
+        height: 630,
+        alt: 'Benefits of Concierge Medicine in Knoxville, TN',
+      },
+    ],
+  },
+  other: {
+    'og:logo': 'https://www.vitality-med.com/logo.svg',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Benefits of Concierge Medicine in Knoxville TN',
+    title: 'Benefits of Concierge Medicine in Knoxville TN | Direct Primary Care Advantages',
     description: 'Discover the benefits of concierge medicine in Knoxville, TN. Learn why direct primary care offers better access and personalized care.',
+    images: ['https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png'],
   },
 };
 

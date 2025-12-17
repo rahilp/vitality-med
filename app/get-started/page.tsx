@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Join Concierge Medicine in Knoxville TN | Sign Up Direct Primary Care',
     description: 'Join our concierge medicine practice in Knoxville, TN today. Sign up for direct primary care membership.',
+    images: ['https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png'],
   },
 };
 

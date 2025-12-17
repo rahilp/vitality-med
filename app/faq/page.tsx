@@ -14,13 +14,27 @@ export const metadata: Metadata = {
   description: 'Get answers to common questions about concierge medicine in Knoxville, TN. Learn everything about direct primary care, membership costs, services included, and how it differs from traditional insurance-based healthcare.',
   keywords: 'concierge medicine questions Knoxville, direct primary care FAQ Knoxville TN, concierge doctor answers Knoxville, concierge medicine FAQ Knoxville Tennessee, questions about direct primary care Knoxville, concierge medicine information Knoxville',
   openGraph: {
+    url: 'https://www.vitality-med.com/faq',
+    type: 'website',
     title: 'Concierge Medicine FAQ Knoxville TN | Direct Primary Care Questions',
     description: 'Get answers to common questions about concierge medicine in Knoxville, TN. Learn everything about direct primary care and membership.',
+    images: [
+      {
+        url: 'https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+        width: 1200,
+        height: 630,
+        alt: 'Concierge Medicine FAQ in Knoxville, TN',
+      },
+    ],
+  },
+  other: {
+    'og:logo': 'https://www.vitality-med.com/logo.svg',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Concierge Medicine FAQ Knoxville TN | Direct Primary Care Questions',
     description: 'Get answers to common questions about concierge medicine in Knoxville, TN. Learn everything about direct primary care.',
+    images: ['https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png'],
   },
 };
 

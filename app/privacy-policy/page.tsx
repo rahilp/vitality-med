@@ -5,6 +5,23 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy | Vitality Concierge Medicine',
   description: 'Privacy Policy for Vitality Concierge Medicine. Learn how we protect and use your personal health information.',
+  openGraph: {
+    url: 'https://www.vitality-med.com/privacy-policy',
+    type: 'website',
+    title: 'Privacy Policy | Vitality Concierge Medicine',
+    description: 'Privacy Policy for Vitality Concierge Medicine. Learn how we protect and use your personal health information.',
+    images: [
+      {
+        url: 'https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+        width: 1200,
+        height: 630,
+        alt: 'Privacy Policy - Vitality Concierge Medicine',
+      },
+    ],
+  },
+  other: {
+    'og:logo': 'https://www.vitality-med.com/logo.svg',
+  },
 };
 
 export default function PrivacyPolicyPage() {

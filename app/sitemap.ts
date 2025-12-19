@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllTreatmentIds } from '@/lib/treatments';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = 'https://www.vitalityconcierge.com';
+  const baseUrl = 'https://www.vitality-med.com';
   
   // Get all treatment IDs for dynamic routes
   const treatmentIds = getAllTreatmentIds();

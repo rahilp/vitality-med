@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     authors: ['Vitality Concierge Medicine'],
     images: [
       {
-        url: 'https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+        url: 'https://www.vitality-med.com/knoxville_benefits_of_concierge_medicine_dpc_direct_primary_care.jpg',
         width: 1200,
         height: 630,
         alt: 'Knoxville Residents Benefit from Concierge Medicine',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'How Knoxville Residents Benefit from Concierge Medicine in 2026',
     description: 'Discover the numerous benefits Knoxville residents enjoy with concierge medicine.',
-    images: ['https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png'],
+    images: ['https://www.vitality-med.com/knoxville_benefits_of_concierge_medicine_dpc_direct_primary_care.jpg'],
   },
 };
 
@@ -44,13 +44,13 @@ export default function KnoxvilleResidentsBenefitPage() {
       date="2025-01-10"
       readTime="7 min read"
       description="Discover the numerous benefits Knoxville residents enjoy with concierge medicine. From same-day appointments to personalized care plans."
-      image="https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png"
+      image="https://www.vitality-med.com/knoxville_benefits_of_concierge_medicine_dpc_direct_primary_care.jpg"
       url="https://www.vitality-med.com/blog/knoxville-residents-benefit-from-concierge-medicine"
       breadcrumbs={[
         { label: 'Blog', href: '/blog' },
         { label: 'Knoxville Residents Benefit from Concierge Medicine', href: '/blog/knoxville-residents-benefit-from-concierge-medicine' },
       ]}
-      imageSrc="/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png"
+      imageSrc="/knoxville_benefits_of_concierge_medicine_dpc_direct_primary_care.jpg"
       imageAlt="Knoxville Residents Benefit from Concierge Medicine"
       relatedArticles={[
         { title: 'Direct Primary Care (DPC) Knoxville, TN: Your Complete Guide', href: '/blog/direct-primary-care-dpc-knoxville-tn' },

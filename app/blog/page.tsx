@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: 'Read expert articles about concierge medicine, direct primary care, and healthcare in Knoxville, TN.',
     images: [
       {
-        url: 'https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+        url: 'https://www.vitality-med.com/what_is_direct_primary_care_knoxville_2026.jpg',
         width: 1200,
         height: 630,
         alt: 'Vitality Concierge Medicine Blog',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Healthcare Blog | Concierge Medicine & Direct Primary Care Articles 2026',
     description: 'Read expert articles about concierge medicine, direct primary care, and healthcare in Knoxville, TN.',
-    images: ['https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png'],
+    images: ['https://www.vitality-med.com/what_is_direct_primary_care_knoxville_2026.jpg'],
   },
 };
 
@@ -55,7 +55,7 @@ const blogPosts: BlogPost[] = [
     description: 'Discover how Direct Primary Care (DPC) in Knoxville, TN is revolutionizing healthcare. Learn about affordable, personalized medical care without insurance hassles, same-day appointments, and 24/7 access to your doctor.',
     date: '2025-01-15',
     readTime: '8 min read',
-    image: '/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+    image: '/what_is_direct_primary_care_knoxville_2026.jpg',
     keywords: 'Direct Primary Care DPC Knoxville TN',
   },
   {
@@ -64,7 +64,7 @@ const blogPosts: BlogPost[] = [
     description: 'Explore the numerous benefits Knoxville residents enjoy with concierge medicine. From same-day appointments to personalized care plans, discover why more people are choosing this healthcare model.',
     date: '2025-01-10',
     readTime: '7 min read',
-    image: '/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+    image: '/knoxville_benefits_of_concierge_medicine_dpc_direct_primary_care.jpg',
     keywords: 'Knoxville Residents Benefit from Concierge Medicine',
   },
   {
@@ -73,7 +73,7 @@ const blogPosts: BlogPost[] = [
     description: 'Your comprehensive guide to finding the best concierge doctors in Knoxville, TN. Learn what to look for, questions to ask, and how to choose the right concierge physician for your healthcare needs.',
     date: '2025-01-05',
     readTime: '9 min read',
-    image: '/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+    image: '/finding_best_knoxville_concierge_doctor_direct_primary_care.jpg',
     keywords: 'Concierge Doctors in Knoxville TN',
   },
 ];

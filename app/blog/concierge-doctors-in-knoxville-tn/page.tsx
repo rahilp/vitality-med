@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     authors: ['Vitality Concierge Medicine'],
     images: [
       {
-        url: 'https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+        url: 'https://www.vitality-med.com/finding_best_knoxville_concierge_doctor_direct_primary_care.jpg',
         width: 1200,
         height: 630,
         alt: 'Finding the Best Concierge Doctors in Knoxville, TN',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Finding the Best Concierge Doctors in Knoxville, TN: 2026 Guide',
     description: 'Your comprehensive guide to finding the best concierge doctors in Knoxville, TN.',
-    images: ['https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png'],
+    images: ['https://www.vitality-med.com/finding_best_knoxville_concierge_doctor_direct_primary_care.jpg'],
   },
 };
 
@@ -45,13 +45,13 @@ export default function ConciergeDoctorsPage() {
       date="2025-01-05"
       readTime="9 min read"
       description="Your comprehensive guide to finding the best concierge doctors in Knoxville, TN. Learn what to look for, questions to ask, and how to choose the right concierge physician."
-      image="https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png"
+      image="https://www.vitality-med.com/finding_best_knoxville_concierge_doctor_direct_primary_care.jpg"
       url="https://www.vitality-med.com/blog/concierge-doctors-in-knoxville-tn"
       breadcrumbs={[
         { label: 'Blog', href: '/blog' },
         { label: 'Concierge Doctors in Knoxville TN', href: '/blog/concierge-doctors-in-knoxville-tn' },
       ]}
-      imageSrc="/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png"
+      imageSrc="/finding_best_knoxville_concierge_doctor_direct_primary_care.jpg"
       imageAlt="Finding the Best Concierge Doctors in Knoxville, TN"
       relatedArticles={[
         { title: 'Direct Primary Care (DPC) Knoxville, TN: Your Complete Guide', href: '/blog/direct-primary-care-dpc-knoxville-tn' },

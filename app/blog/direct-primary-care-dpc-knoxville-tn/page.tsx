@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     authors: ['Vitality Concierge Medicine'],
     images: [
       {
-        url: 'https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
+        url: 'https://www.vitality-med.com/what_is_direct_primary_care_knoxville_2026.jpg',
         width: 1200,
         height: 630,
         alt: 'Direct Primary Care (DPC) in Knoxville, TN',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Direct Primary Care (DPC) Knoxville, TN: Your Complete Guide 2026',
     description: 'Discover how Direct Primary Care (DPC) in Knoxville, TN is revolutionizing healthcare.',
-    images: ['https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png'],
+    images: ['https://www.vitality-med.com/what_is_direct_primary_care_knoxville_2026.jpg'],
   },
 };
 
@@ -44,13 +44,13 @@ export default function DirectPrimaryCarePage() {
       date="2025-01-15"
       readTime="8 min read"
       description="Discover how Direct Primary Care (DPC) in Knoxville, TN is revolutionizing healthcare. Learn about affordable, personalized medical care without insurance hassles."
-      image="https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png"
+      image="https://www.vitality-med.com/what_is_direct_primary_care_knoxville_2026.jpg"
       url="https://www.vitality-med.com/blog/direct-primary-care-dpc-knoxville-tn"
       breadcrumbs={[
         { label: 'Blog', href: '/blog' },
         { label: 'Direct Primary Care DPC Knoxville TN', href: '/blog/direct-primary-care-dpc-knoxville-tn' },
       ]}
-      imageSrc="/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png"
+      imageSrc="/what_is_direct_primary_care_knoxville_2026.jpg"
       imageAlt="Direct Primary Care (DPC) in Knoxville, TN"
       relatedArticles={[
         { title: 'How Knoxville Residents Benefit from Concierge Medicine', href: '/blog/knoxville-residents-benefit-from-concierge-medicine' },

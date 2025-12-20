@@ -2,6 +2,7 @@ import { Section } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Check, User, Phone, Mail, Calendar, Heart } from 'lucide-react';
+import { getIndividualPrice, getFamilyPrice } from '@/lib/pricing';
 import type { Metadata } from 'next';
 
 // Force static generation for this page
@@ -117,8 +118,8 @@ export default function GetStartedPage() {
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-primary focus:border-teal-primary transition-colors"
                   >
                     <option value="">Choose a plan...</option>
-                    <option value="individual">Individual - $99/month</option>
-                    <option value="family">Family - $249/month</option>
+                    <option value="individual">Individual - {getIndividualPrice().formattedWithPeriod}</option>
+                    <option value="family">Family - {getFamilyPrice().formattedWithPeriod}</option>
                   </select>
                 </div>
 

@@ -2,6 +2,7 @@ import { Check, Star } from 'lucide-react';
 import Link from 'next/link';
 import { Section } from '../ui/Section';
 import { Button } from '../ui/Button';
+import { getIndividualPrice, getFamilyPrice } from '@/lib/pricing';
 
 interface Plan {
   name: string;
@@ -13,10 +14,13 @@ interface Plan {
 }
 
 export function Pricing() {
+  const individualPrice = getIndividualPrice();
+  const familyPrice = getFamilyPrice();
+
   const plans: Plan[] = [
     {
       name: 'Individual',
-      price: '$149',
+      price: individualPrice.formatted,
       period: 'per month',
       description: 'Perfect for individuals seeking direct access to quality healthcare',
       features: [
@@ -33,7 +37,7 @@ export function Pricing() {
     },
     {
       name: 'Family',
-      price: '$499',
+      price: familyPrice.formatted,
       period: 'per month',
       description: 'Comprehensive care for your entire household',
       features: [

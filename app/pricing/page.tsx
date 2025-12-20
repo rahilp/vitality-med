@@ -4,6 +4,7 @@ import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Calculator } from 'lucide-react';
 import { Section } from '@/components/ui/Section';
 import { Button } from '@/components/ui/Button';
+import { getIndividualPrice, getAnnualPricing } from '@/lib/pricing';
 import type { Metadata } from 'next';
 
 // Force static generation for this page
@@ -108,7 +109,7 @@ export default function PricingPage() {
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between items-center pb-3 border-b border-white/20">
                   <span>Monthly Membership</span>
-                  <span>$99</span>
+                  <span>{getIndividualPrice().formatted}</span>
                 </div>
                 <div className="flex justify-between items-center pb-3 border-b border-white/20">
                   <span>Annual Deductible</span>
@@ -126,7 +127,7 @@ export default function PricingPage() {
               <div className="pt-4 border-t-2 border-white/30">
                 <div className="flex justify-between items-center">
                   <span className="text-lg">Annual Cost</span>
-                  <span className="text-3xl text-gold-primary">$1,188</span>
+                  <span className="text-3xl text-gold-primary">{getAnnualPricing().individualFormatted}</span>
                 </div>
                 <p className="text-sm text-gray-300 mt-2">*All-inclusive for primary care</p>
               </div>

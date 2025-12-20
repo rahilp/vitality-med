@@ -3,6 +3,7 @@ import { CTA } from '@/components/sections/CTA';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Clock, Heart, Shield } from 'lucide-react';
 import { Section } from '@/components/ui/Section';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 
 // Force static generation for this page
@@ -53,6 +54,9 @@ export default function BenefitsPage() {
           <p className="text-xl text-gray-200">
             Experience the freedom of direct primary care—where you come first, 
             not insurance companies.
+          </p>
+          <p className="text-lg text-gray-300 mt-4">
+            Discover <Link href="/blog/knoxville-residents-benefit-from-concierge-medicine" className="text-gold-primary hover:text-gold-light underline">how Knoxville residents benefit from concierge medicine</Link> and learn about <Link href="/blog/direct-primary-care-dpc-knoxville-tn" className="text-gold-primary hover:text-gold-light underline">Direct Primary Care (DPC) in Knoxville, TN</Link>.
           </p>
         </div>
       </Section>

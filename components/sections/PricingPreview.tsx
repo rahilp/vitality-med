@@ -2,8 +2,11 @@ import { Check, ArrowRight, Star } from 'lucide-react';
 import Link from 'next/link';
 import { Section } from '../ui/Section';
 import { Button } from '../ui/Button';
+import { getIndividualPrice, getFamilyPrice } from '@/lib/pricing';
 
 export function PricingPreview() {
+  const individualPrice = getIndividualPrice();
+  const familyPrice = getFamilyPrice();
   return (
     <Section background="white" spacing="lg">
       <div className="text-center mb-12">
@@ -19,7 +22,7 @@ export function PricingPreview() {
           <div className="text-center mb-6">
             <h3 className="text-xl font-semibold mb-2 text-teal-primary">Individual</h3>
             <div className="mb-2">
-              <span className="text-4xl text-teal-primary">$149</span>
+              <span className="text-4xl text-teal-primary">{individualPrice.formatted}</span>
               <span className="text-gray-600 ml-2">per month</span>
             </div>
             <p className="text-sm text-gray-600">Perfect for individuals seeking direct access to quality healthcare</p>
@@ -45,7 +48,7 @@ export function PricingPreview() {
           <div className="text-center mb-6">
             <h3 className="text-xl font-semibold mb-2">Family</h3>
             <div className="mb-2">
-              <span className="text-4xl text-gold-primary">$499</span>
+              <span className="text-4xl text-gold-primary">{familyPrice.formatted}</span>
               <span className="text-gray-300 ml-2">per month</span>
             </div>
             <p className="text-sm text-gray-300">Comprehensive care for your entire household</p>

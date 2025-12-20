@@ -14,6 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/benefits',
     '/treatments',
     '/pricing',
+    '/blog',
     '/faq',
     '/contact',
     '/get-started',
@@ -21,6 +22,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/privacy-policy',
     '/terms-of-service',
     '/membership-agreement',
+  ];
+  
+  // Blog posts
+  const blogPosts = [
+    '/blog/direct-primary-care-dpc-knoxville-tn',
+    '/blog/knoxville-residents-benefit-from-concierge-medicine',
+    '/blog/concierge-doctors-in-knoxville-tn',
   ];
   
   // Generate sitemap entries for static pages
@@ -39,6 +47,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
   
-  return [...staticEntries, ...treatmentEntries];
+  // Generate sitemap entries for blog posts
+  const blogEntries: MetadataRoute.Sitemap = blogPosts.map((path) => ({
+    url: `${baseUrl}${path}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }));
+  
+  return [...staticEntries, ...treatmentEntries, ...blogEntries];
 }
 

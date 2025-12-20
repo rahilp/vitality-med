@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, X, Home, Info, Heart, DollarSign, HelpCircle, Stethoscope } from 'lucide-react';
+import { Menu, X, Home, Info, Heart, DollarSign, HelpCircle, Stethoscope, BookOpen } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -27,6 +27,7 @@ export function Header() {
     { href: '/benefits', label: 'Benefits', icon: Heart },
     { href: '/treatments', label: 'Treatments', icon: Stethoscope },
     { href: '/pricing', label: 'Pricing', icon: DollarSign },
+    { href: '/blog', label: 'Blog', icon: BookOpen },
     { href: '/faq', label: 'FAQ', icon: HelpCircle },
   ];
 

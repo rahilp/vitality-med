@@ -1,6 +1,7 @@
 import { Clock, DollarSign, Users, HeartPulse, Phone, CheckCircle } from 'lucide-react';
 import { Section } from '../ui/Section';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface Benefit {
   icon: React.ComponentType<{ className?: string }>;
@@ -95,6 +96,9 @@ export function Benefits() {
                 <span>Are tired of the traditional healthcare system</span>
               </li>
             </ul>
+            <p className="mt-6 text-gray-200">
+              Learn more about <Link href="/blog/knoxville-residents-benefit-from-concierge-medicine" className="text-gold-primary hover:text-gold-light underline font-semibold">how Knoxville residents benefit from concierge medicine</Link> and discover if it&apos;s right for you.
+            </p>
           </div>
           <div className="relative h-64 md:h-96">
             <Image 

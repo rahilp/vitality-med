@@ -4,6 +4,7 @@ import { Button } from '../ui/Button';
 import { Section } from '../ui/Section';
 import { StatCard } from '../ui/StatCard';
 import Image from 'next/image';
+import { getIndividualPrice } from '@/lib/pricing';
 
 export function Hero() {
   return (
@@ -59,7 +60,7 @@ export function Hero() {
         
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
           <StatCard
-            value="$99"
+            value={getIndividualPrice().formatted}
             label="Per Month"
             icon={<DollarSign className="w-6 h-6 text-gold-primary" />}
           />

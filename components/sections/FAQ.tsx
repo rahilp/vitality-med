@@ -5,6 +5,7 @@ import { ChevronDown, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { Section } from '../ui/Section';
 import { Button } from '../ui/Button';
+import { getIndividualPrice } from '@/lib/pricing';
 
 interface FAQItem {
   question: string;
@@ -17,6 +18,8 @@ interface FAQProps {
 
 export function FAQ({ variant = 'full' }: FAQProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  
+  const individualPrice = getIndividualPrice();
 
   // Homepage FAQs - subset of most important questions
   const faqHomepageItems: FAQItem[] = [
@@ -34,7 +37,7 @@ export function FAQ({ variant = 'full' }: FAQProps) {
     },
     {
       "question": "How much does concierge medicine cost?",
-      "answer": "Vitality Concierge Medicine memberships are $199 per month. This transparent pricing covers most primary care needs and helps patients better predict their healthcare costs."
+      "answer": `Vitality Concierge Medicine memberships are ${individualPrice.formattedWithPeriod}. This transparent pricing covers most primary care needs and helps patients better predict their healthcare costs.`
     },
     {
       "question": "Do I still need health insurance with concierge medicine?",
@@ -66,7 +69,7 @@ export function FAQ({ variant = 'full' }: FAQProps) {
     },
     {
       "question": "What is the cost of a Vitality Concierge Medicine membership?",
-      "answer": "The cost of a Vitality Concierge Medicine membership is $199 per month. This fee includes unlimited office visits, 24/7 virtual access to your physician, same-day and next-day appointments, chronic disease management, preventive care and wellness exams, and care coordination. This transparent monthly pricing helps many patients better predict their primary care costs."
+      "answer": `The cost of a Vitality Concierge Medicine membership is ${individualPrice.formattedWithPeriod}. This fee includes unlimited office visits, 24/7 virtual access to your physician, same-day and next-day appointments, chronic disease management, preventive care and wellness exams, and care coordination. This transparent monthly pricing helps many patients better predict their primary care costs.`
     },
     {
       "question": "What is the difference between Vitality Concierge Medicine and traditional health insurance?",

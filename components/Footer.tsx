@@ -46,6 +46,7 @@ export function Footer() {
               <li><Link href="/how-it-works" className="hover:text-gold-primary transition-colors">How It Works</Link></li>
               <li><Link href="/benefits" className="hover:text-gold-primary transition-colors">Benefits</Link></li>
               <li><Link href="/pricing" className="hover:text-gold-primary transition-colors">Pricing</Link></li>
+              <li><Link href="/blog" className="hover:text-gold-primary transition-colors">Blog</Link></li>
               <li><Link href="/faq" className="hover:text-gold-primary transition-colors">FAQ</Link></li>
               <li><Link href="/contact" className="hover:text-gold-primary transition-colors">Contact</Link></li>
             </ul>
@@ -157,7 +158,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
-          <p>&copy; 2025 Vitality Concierge Medicine by Valencia. All rights reserved.</p>
+          <p>&copy; 2026 Vitality Concierge Medicine by Valencia. All rights reserved.</p>
           <p className="mt-2">
             Vitality is a direct primary care practice and is not health insurance. 
             We are not a substitute for health insurance or major medical coverage.

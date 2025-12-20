@@ -2,6 +2,7 @@ import { HowItWorks } from '@/components/sections/HowItWorks';
 import { CTA } from '@/components/sections/CTA';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Section } from '@/components/ui/Section';
+import Link from 'next/link';
 import type { Metadata } from 'next';
 
 // Force static generation for this page
@@ -52,6 +53,9 @@ export default function HowItWorksPage() {
           <p className="text-xl text-gray-200">
             No complex paperwork, no insurance verification, no long waits. 
             Just straightforward access to quality healthcare.
+          </p>
+          <p className="text-lg text-gray-300 mt-4">
+            Learn more about <Link href="/blog/direct-primary-care-dpc-knoxville-tn" className="text-gold-primary hover:text-gold-light underline">how Direct Primary Care works in Knoxville, TN</Link> and <Link href="/blog/concierge-doctors-in-knoxville-tn" className="text-gold-primary hover:text-gold-light underline">finding the best concierge doctors in Knoxville</Link>.
           </p>
         </div>
       </Section>

@@ -63,11 +63,60 @@ export default function BenefitsPage() {
       </Section>
       <Breadcrumbs items={[{ label: 'Benefits', href: '/benefits' }]} />
       
+      {/* Quick Summary & On This Page */}
+      <Section background="white" spacing="md">
+        <div className="max-w-6xl mx-auto grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,1.4fr)]">
+          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8">
+            <h2 className="text-2xl sm:text-3xl mb-4 text-teal-primary">
+              At-a-glance: Why Knoxville Residents Choose Vitality
+            </h2>
+            <p className="text-gray-700 mb-4">
+              Vitality&apos;s concierge model gives Knoxville families faster access, more time with their doctor, and
+              predictable pricing—without sacrificing comprehensive primary care.
+            </p>
+            <ul className="list-disc pl-5 space-y-2 text-gray-700">
+              <li>Same-day or next-day appointments instead of 3+ week waits</li>
+              <li>30–60 minute visits focused on your full health story</li>
+              <li>Flat monthly membership starting at {getIndividualPrice().formattedWithPeriod}</li>
+              <li>24/7 access to your doctor via call, text, or virtual visits</li>
+              <li>Smaller patient panels so your doctor actually knows you</li>
+            </ul>
+          </div>
+
+          <aside className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+            <h3 className="text-lg font-medium mb-3 text-teal-primary">
+              On this page
+            </h3>
+            <nav className="space-y-2 text-sm" aria-label="On this page">
+              {[
+                { href: '#why-knoxville-residents-are-choosing-concierge-medicine', label: 'Why Knoxville Residents Are Choosing Concierge Medicine' },
+                { href: '#top-benefits-concierge-medicine-knoxville', label: 'Top Benefits of Concierge Medicine' },
+                { href: '#vitality-difference-real-numbers-knoxville', label: 'The Vitality Difference: Real Numbers' },
+                { href: '#who-benefits-most-concierge-medicine-knoxville', label: 'Who Benefits Most in Knoxville' },
+                { href: '#making-switch-concierge-medicine-knoxville', label: 'Making the Switch to Concierge Medicine' },
+              ].map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="group flex items-center gap-2 rounded-lg px-3 py-2 text-gray-700 hover:text-teal-primary hover:bg-gray-50 transition-colors"
+                >
+                  <span className="h-1.5 w-1.5 rounded-full bg-teal-primary/50 group-hover:bg-teal-primary transition-colors" />
+                  <span>{item.label}</span>
+                </a>
+              ))}
+            </nav>
+          </aside>
+        </div>
+      </Section>
+
       <Benefits />
       
       <Section background="white" spacing="lg">
         <div className="max-w-4xl mx-auto prose prose-lg max-w-none">
-          <h2 className="text-3xl sm:text-4xl mb-6 text-teal-primary">
+          <h2
+            id="why-knoxville-residents-are-choosing-concierge-medicine"
+            className="text-3xl sm:text-4xl mb-6 text-teal-primary scroll-mt-32"
+          >
             Why Knoxville Residents Are Choosing Concierge Medicine
           </h2>
           
@@ -79,7 +128,10 @@ export default function BenefitsPage() {
             If you&apos;re tired of waiting weeks for appointments, rushed 15-minute visits, and dealing with insurance hassles, you&apos;re not alone. Many Knoxville residents are making the switch to concierge medicine because it offers a fundamentally different healthcare experience—one that puts you, the patient, first. <Link href="/blog/knoxville-residents-benefit-from-concierge-medicine" className="text-teal-primary hover:text-teal-dark underline">Learn more about how Knoxville residents benefit from concierge medicine</Link> and why it&apos;s becoming the preferred healthcare choice for so many local families.
           </p>
 
-          <h2 className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12">
+          <h2
+            id="top-benefits-concierge-medicine-knoxville"
+            className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12 scroll-mt-32"
+          >
             The Top Benefits of Concierge Medicine in Knoxville
           </h2>
 
@@ -247,7 +299,10 @@ export default function BenefitsPage() {
             This freedom allows your doctor to practice medicine the way it should be practiced—focusing on you, the patient, rather than insurance requirements. For laboratory work and diagnostic tests, we can still bill your insurance when applicable, helping keep your overall healthcare costs manageable while maintaining the simplicity of direct primary care.
           </p>
 
-          <h2 className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12">
+          <h2
+            id="vitality-difference-real-numbers-knoxville"
+            className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12 scroll-mt-32"
+          >
             The Vitality Difference: Real Numbers for Knoxville Residents
           </h2>
 
@@ -320,7 +375,10 @@ export default function BenefitsPage() {
 
       <Section background="white" spacing="lg">
         <div className="max-w-4xl mx-auto prose prose-lg max-w-none">
-          <h2 className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12">
+          <h2
+            id="who-benefits-most-concierge-medicine-knoxville"
+            className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12 scroll-mt-32"
+          >
             Who Benefits Most from Concierge Medicine in Knoxville?
           </h2>
 
@@ -368,7 +426,10 @@ export default function BenefitsPage() {
             Retirees in Knoxville often appreciate the personalized attention and preventive focus of concierge medicine. With more time to focus on wellness and prevention, concierge doctors can help retirees maintain their health and independence as they age. The transparent pricing also helps those on fixed incomes better predict their healthcare expenses.
           </p>
 
-          <h2 className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12">
+          <h2
+            id="making-switch-concierge-medicine-knoxville"
+            className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12 scroll-mt-32"
+          >
             Making the Switch to Concierge Medicine in Knoxville
           </h2>
 

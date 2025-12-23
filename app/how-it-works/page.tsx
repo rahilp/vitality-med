@@ -61,11 +61,61 @@ export default function HowItWorksPage() {
       </Section>
       <Breadcrumbs items={[{ label: 'How It Works', href: '/how-it-works' }]} />
       
+      {/* Quick Summary & On This Page */}
+      <Section background="white" spacing="md">
+        <div className="max-w-6xl mx-auto grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,1.4fr)]">
+          <div className="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8">
+            <h2 className="text-2xl sm:text-3xl mb-4 text-teal-primary">
+              At-a-glance: How Vitality Works in Knoxville
+            </h2>
+            <p className="text-gray-700 mb-4">
+              Concierge medicine at Vitality is designed to be simple for Knoxville residents: a clear monthly membership,
+              same-day access, and a doctor who actually has time for you.
+            </p>
+            <ul className="list-disc pl-5 space-y-2 text-gray-700">
+              <li>Flat monthly membership with no copays for primary care visits</li>
+              <li>Same-day or next-day appointments and 24/7 direct access to your doctor</li>
+              <li>60–90 minute new-patient visits focused on your whole health story</li>
+              <li>Smaller patient panels so your doctor can actually know you</li>
+              <li>Easy online enrollment and a simple four-step onboarding process</li>
+            </ul>
+          </div>
+
+          <aside className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+            <h3 className="text-lg font-medium mb-3 text-teal-primary">
+              On this page
+            </h3>
+            <nav className="space-y-2 text-sm" aria-label="On this page">
+              {[
+                { href: '#understanding-concierge-medicine-knoxville', label: 'Understanding How Concierge Medicine Works' },
+                { href: '#four-step-process-join-vitality', label: 'Simple Four-Step Process to Join' },
+                { href: '#what-makes-concierge-medicine-different-knoxville', label: 'What Makes Concierge Medicine Different' },
+                { href: '#who-benefits-from-concierge-medicine-knoxville', label: 'Who Benefits Most in Knoxville' },
+                { href: '#getting-started-with-vitality-knoxville', label: 'Getting Started with Vitality' },
+                { href: '#what-happens-after-you-join', label: 'What Happens After You Join' },
+              ].map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="group flex items-center gap-2 rounded-lg px-3 py-2 text-gray-700 hover:text-teal-primary hover:bg-gray-50 transition-colors"
+                >
+                  <span className="h-1.5 w-1.5 rounded-full bg-teal-primary/50 group-hover:bg-teal-primary transition-colors" />
+                  <span>{item.label}</span>
+                </a>
+              ))}
+            </nav>
+          </aside>
+        </div>
+      </Section>
+
       <HowItWorks />
       
       <Section background="white" spacing="lg">
         <div className="max-w-4xl mx-auto prose prose-lg max-w-none">
-          <h2 className="text-3xl sm:text-4xl mb-6 text-teal-primary">
+          <h2
+            id="understanding-concierge-medicine-knoxville"
+            className="text-3xl sm:text-4xl mb-6 text-teal-primary scroll-mt-32"
+          >
             Understanding How Concierge Medicine Works in Knoxville, TN
           </h2>
           
@@ -81,7 +131,10 @@ export default function HowItWorksPage() {
             At Vitality Concierge Medicine, we&apos;ve designed our process to be as straightforward as possible. Whether you&apos;re a busy professional in downtown Knoxville, a family in West Knoxville, or a retiree in East Tennessee, joining our practice is simple and stress-free. <Link href="/blog/direct-primary-care-dpc-knoxville-tn" className="text-teal-primary hover:text-teal-dark underline">Learn more about how Direct Primary Care works in Knoxville, TN</Link> and why it&apos;s becoming the preferred healthcare model for many local residents.
           </p>
 
-          <h2 className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12">
+          <h2
+            id="four-step-process-join-vitality"
+            className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12 scroll-mt-32"
+          >
             The Simple Four-Step Process to Join Vitality in Knoxville
           </h2>
 
@@ -173,7 +226,10 @@ export default function HowItWorksPage() {
             Once your care plan is established, you have unlimited access to your Vitality care team. This is where concierge medicine truly shines for Knoxville residents. Need a same-day appointment? No problem—we can typically accommodate same-day or next-day visits. Have a question at 10 PM on a Sunday? Call, text, or video chat with your doctor. Health concerns don&apos;t follow a 9-to-5 schedule, and neither should your access to medical care.
           </p>
 
-          <h2 className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12">
+          <h2
+            id="what-makes-concierge-medicine-different-knoxville"
+            className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12 scroll-mt-32"
+          >
             What Makes Concierge Medicine Different in Knoxville?
           </h2>
 
@@ -224,7 +280,10 @@ export default function HowItWorksPage() {
             <li>Anyone who values financial transparency in their healthcare</li>
           </ul>
 
-          <h2 className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12">
+          <h2
+            id="who-benefits-from-concierge-medicine-knoxville"
+            className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12 scroll-mt-32"
+          >
             Who Benefits Most from Concierge Medicine in Knoxville?
           </h2>
 
@@ -264,7 +323,10 @@ export default function HowItWorksPage() {
             For self-employed professionals or those between jobs in Knoxville, traditional health insurance can be prohibitively expensive. Concierge medicine offers an affordable alternative that provides quality primary care without the high premiums, deductibles, and copays associated with traditional insurance plans.
           </p>
 
-          <h2 className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12">
+          <h2
+            id="getting-started-with-vitality-knoxville"
+            className="text-3xl sm:text-4xl mb-6 text-teal-primary mt-12 scroll-mt-32"
+          >
             Getting Started with Vitality Concierge Medicine in Knoxville
           </h2>
 
@@ -280,7 +342,10 @@ export default function HowItWorksPage() {
       
       <Section background="gray" spacing="lg">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl mb-8 text-teal-primary text-center">
+          <h2
+            id="what-happens-after-you-join"
+            className="text-3xl sm:text-4xl mb-8 text-teal-primary text-center scroll-mt-32"
+          >
             What Happens After You Join?
           </h2>
           

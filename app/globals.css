@@ -144,6 +144,7 @@
   
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+    font-weight: 300; /* All headings use font-weight 300 (light) by default */
   }
 }
 
@@ -154,25 +155,25 @@
   :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
     h1 {
       font-size: var(--text-2xl);
-      font-weight: var(--font-weight-medium);
+      font-weight: 300; /* All headings use font-weight 300 (light) by default */
       line-height: 1.5;
     }
 
     h2 {
       font-size: var(--text-xl);
-      font-weight: var(--font-weight-medium);
+      font-weight: 300; /* All headings use font-weight 300 (light) by default */
       line-height: 1.5;
     }
 
     h3 {
       font-size: var(--text-lg);
-      font-weight: var(--font-weight-medium);
+      font-weight: 300; /* All headings use font-weight 300 (light) by default */
       line-height: 1.5;
     }
 
     h4 {
       font-size: var(--text-base);
-      font-weight: var(--font-weight-medium);
+      font-weight: 300; /* All headings use font-weight 300 (light) by default */
       line-height: 1.5;
     }
 

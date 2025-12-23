@@ -3,6 +3,7 @@ import { HowItWorksPreview } from '@/components/sections/HowItWorksPreview';
 import { BenefitsPreview } from '@/components/sections/BenefitsPreview';
 import { TreatmentsPreview } from '@/components/sections/TreatmentsPreview';
 import { PricingPreview } from '@/components/sections/PricingPreview';
+import { PhysicianSpotlight } from '@/components/sections/PhysicianSpotlight';
 import { FAQ } from '@/components/sections/FAQ';
 import { CTA } from '@/components/sections/CTA';
 import type { Metadata } from 'next';
@@ -46,6 +47,7 @@ export default function HomePage() {
       <Hero />
       <HowItWorksPreview />
       <BenefitsPreview />
+      <PhysicianSpotlight />
       <TreatmentsPreview />
       <PricingPreview />
       <FAQ variant="homepage" />

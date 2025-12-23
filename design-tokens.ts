@@ -67,6 +67,11 @@ export const typography = {
     normal: 1.5,
     relaxed: 1.75,
   },
+  // Default heading styles - all headings should use font-weight 300 (light)
+  heading: {
+    fontWeight: 300, // font-light
+    fontFamily: "'Playfair Display', serif",
+  },
 };
 
 export const spacing = {

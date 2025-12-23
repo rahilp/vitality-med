@@ -5,6 +5,7 @@ import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
+import { ConditionalLayout } from '@/components/ConditionalLayout';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -122,11 +123,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
         </noscript>
         <StructuredData />
-        <Header />
-        <main className="pt-16 sm:pt-24 lg:pt-28">
+        <ConditionalLayout>
           {children}
-        </main>
-        <Footer />
+        </ConditionalLayout>
       </body>
     </html>
   );

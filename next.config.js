@@ -11,6 +11,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'figma.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
+      },
     ],
   },
 };

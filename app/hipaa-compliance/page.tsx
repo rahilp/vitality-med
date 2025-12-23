@@ -158,7 +158,7 @@ export default function HIPAAPage() {
               <div className="bg-gray-50 p-6 rounded-lg mt-4">
                 <p className="mb-2"><strong>Privacy Officer</strong></p>
                 <p className="mb-2">Vitality Concierge Medicine</p>
-                <p className="mb-2">Phone: (865) 333-6554</p>
+                <p className="mb-2">Phone: (865) 444-6227</p>
                 <p className="mb-2">Email: hello@vitality-med.com</p>
                 <p>Address: 10321 Kingston Pike, Knoxville, TN 37922</p>
               </div>

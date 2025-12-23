@@ -47,7 +47,7 @@ export function CTA() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <a href="tel:865-333-6554" className="flex items-center gap-3 hover:text-gold-primary transition-colors">
               <Phone className="w-5 h-5" />
-              <span>(865) 333-6554</span>
+              <span>(865) 444-6227</span>
             </a>
             <a href="mailto:hello@vitality-med.com" className="flex items-center gap-3 hover:text-gold-primary transition-colors">
               <Mail className="w-5 h-5" />

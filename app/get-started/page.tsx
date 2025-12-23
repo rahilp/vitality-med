@@ -220,7 +220,7 @@ export default function GetStartedPage() {
                     className="flex items-center gap-2 text-sm text-gray-700 hover:text-teal-primary transition-colors"
                   >
                     <Phone className="w-4 h-4" />
-                    <span>(865) 333-6554</span>
+                    <span>(865) 444-6227</span>
                   </a>
                   <a 
                     href="mailto:hello@vitality-med.com" 

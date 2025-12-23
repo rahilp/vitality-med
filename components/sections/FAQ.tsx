@@ -65,7 +65,7 @@ export function FAQ({ variant = 'full' }: FAQProps) {
     },
     {
       "question": "How do I join Vitality Concierge Medicine?",
-      "answer": "You can join Vitality Concierge Medicine by calling us at (865) 333-6554 or emailing us at hello@vitality-med.com. We will walk you through the process, confirm availability for new members in Knoxville, and answer any questions you have."
+      "answer": "You can join Vitality Concierge Medicine by calling us at (865) 444-6227 or emailing us at hello@vitality-med.com. We will walk you through the process, confirm availability for new members in Knoxville, and answer any questions you have."
     },
     {
       "question": "What is the cost of a Vitality Concierge Medicine membership?",

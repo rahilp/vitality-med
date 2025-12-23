@@ -377,7 +377,7 @@ export default function BenefitsPage() {
           </p>
 
           <p className="text-gray-700 mb-6">
-            At Vitality Concierge Medicine, we make it easy to get started. You can <Link href="/get-started" className="text-teal-primary hover:text-teal-dark underline">enroll online</Link> or call our Knoxville office at (865) 333-6554 to speak with our team. We&apos;ll answer any questions you have and help you determine if concierge medicine is the right fit for your healthcare needs.
+            At Vitality Concierge Medicine, we make it easy to get started. You can <Link href="/get-started" className="text-teal-primary hover:text-teal-dark underline">enroll online</Link> or call our Knoxville office at (865) 444-6227 to speak with our team. We&apos;ll answer any questions you have and help you determine if concierge medicine is the right fit for your healthcare needs.
           </p>
 
           <p className="text-gray-700 mb-6">

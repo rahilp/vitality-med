@@ -6,13 +6,13 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Contact Concierge Doctor in Knoxville TN | Schedule Appointment',
-  description: 'Contact our concierge medicine practice in Knoxville, TN. Call (865) 333-6554 or email us to schedule an appointment, ask questions, or learn more about our direct primary care services.',
+  description: 'Contact our concierge medicine practice in Knoxville, TN. Call (865) 444-6227 or email us to schedule an appointment, ask questions, or learn more about our direct primary care services.',
   keywords: 'contact concierge doctor Knoxville, schedule appointment Knoxville TN, concierge medicine contact Knoxville, direct primary care contact Knoxville Tennessee, concierge doctor phone Knoxville, book appointment concierge medicine Knoxville',
   openGraph: {
     url: 'https://www.vitality-med.com/contact',
     type: 'website',
     title: 'Contact Concierge Doctor in Knoxville TN | Schedule Appointment',
-    description: 'Contact our concierge medicine practice in Knoxville, TN. Call (865) 333-6554 or email us to schedule an appointment or learn more.',
+    description: 'Contact our concierge medicine practice in Knoxville, TN. Call (865) 444-6227 or email us to schedule an appointment or learn more.',
     images: [
       {
         url: 'https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Contact Concierge Doctor in Knoxville TN | Schedule Appointment',
-    description: 'Contact our concierge medicine practice in Knoxville, TN. Call (865) 333-6554 or email us to schedule an appointment.',
+    description: 'Contact our concierge medicine practice in Knoxville, TN. Call (865) 444-6227 or email us to schedule an appointment.',
     images: ['https://www.vitality-med.com/Dr_Valji_Vitality_Concierge_Medicine_Knoxville_TN.png'],
   },
 };
@@ -71,7 +71,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
                     <a href="tel:865-333-6554" className="text-gray-600 hover:text-teal-primary transition-colors">
-                      (865) 333-6554
+                      (865) 444-6227
                     </a>
                     <p className="text-sm text-gray-500 mt-1">Mon-Fri, 8am-6pm EST</p>
                   </div>

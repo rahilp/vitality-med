@@ -26,7 +26,7 @@ export function Footer() {
             <div className="space-y-3">
               <a href="tel:865-333-6554" className="flex items-start gap-3 text-gray-400 hover:text-gold-primary transition-colors">
                 <Phone className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                <span>(865) 333-6554</span>
+                <span>(865) 444-6227</span>
               </a>
               <a href="mailto:hello@vitality-med.com" className="flex items-start gap-3 text-gray-400 hover:text-gold-primary transition-colors">
                 <Mail className="w-5 h-5 flex-shrink-0 mt-0.5" />
@@ -49,6 +49,7 @@ export function Footer() {
               <li><Link href="/blog" className="hover:text-gold-primary transition-colors">Blog</Link></li>
               <li><Link href="/faq" className="hover:text-gold-primary transition-colors">FAQ</Link></li>
               <li><Link href="/contact" className="hover:text-gold-primary transition-colors">Contact</Link></li>
+              <li><Link href="/login" className="hover:text-gold-primary transition-colors">Sign In</Link></li>
             </ul>
           </div>
 

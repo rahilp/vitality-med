@@ -75,7 +75,7 @@ export default function FAQPage() {
           <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             <a href="tel:865-333-6554" className="block">
               <Button variant="primary" size="lg" fullWidth>
-                Call Us: (865) 333-6554
+                Call Us: (865) 444-6227
               </Button>
             </a>
             <a href="mailto:hello@vitality-med.com" className="block">

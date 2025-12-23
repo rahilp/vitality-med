@@ -103,7 +103,7 @@ export default function HowItWorksPage() {
           </ul>
 
           <p className="text-gray-700 mb-6">
-            Both plans include unlimited office visits, same-day appointments, 24/7 virtual access, and all the benefits of concierge medicine. The only difference is the number of people covered. You can sign up online through our simple enrollment form, or call our Knoxville office at (865) 333-6554 to speak with our team directly. There&apos;s no insurance verification required, no credit check, and no long-term contract commitment.
+            Both plans include unlimited office visits, same-day appointments, 24/7 virtual access, and all the benefits of concierge medicine. The only difference is the number of people covered. You can sign up online through our simple enrollment form, or call our Knoxville office at (865) 444-6227 to speak with our team directly. There&apos;s no insurance verification required, no credit check, and no long-term contract commitment.
           </p>
 
           <h3 className="text-2xl font-semibold mb-4 text-teal-primary mt-8">
@@ -269,7 +269,7 @@ export default function HowItWorksPage() {
           </h2>
 
           <p className="text-gray-700 mb-6">
-            Ready to experience healthcare the way it should be? Joining Vitality Concierge Medicine in Knoxville is simple. You can start by <Link href="/get-started" className="text-teal-primary hover:text-teal-dark underline">filling out our enrollment form</Link>, or call our Knoxville office at (865) 333-6554 to speak with our team. We&apos;ll answer any questions you have about how concierge medicine works and help you determine if it&apos;s the right fit for your healthcare needs.
+            Ready to experience healthcare the way it should be? Joining Vitality Concierge Medicine in Knoxville is simple. You can start by <Link href="/get-started" className="text-teal-primary hover:text-teal-dark underline">filling out our enrollment form</Link>, or call our Knoxville office at (865) 444-6227 to speak with our team. We&apos;ll answer any questions you have about how concierge medicine works and help you determine if it&apos;s the right fit for your healthcare needs.
           </p>
 
           <p className="text-gray-700 mb-6">

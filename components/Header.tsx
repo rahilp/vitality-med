@@ -35,7 +35,7 @@ export function Header() {
     <>
       {/* Valencia Medspa Banner */}
       <div className={`fixed top-0 left-0 right-0 z-50 bg-teal-dark transition-all duration-300 ${
-        isScrolled ? 'opacity-0 -translate-y-full pointer-events-none' : 'opacity-100 translate-y-0'
+        isScrolled || mobileMenuOpen ? 'opacity-0 -translate-y-full pointer-events-none' : 'opacity-100 translate-y-0'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center py-2.5 sm:py-3">
@@ -57,8 +57,8 @@ export function Header() {
       <header 
         className={`fixed left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled 
-            ? 'top-0 bg-teal-dark shadow-lg py-3 md:py-3' 
-            : 'top-[36px] sm:top-[40px] bg-teal-dark py-4 md:py-4 lg:py-8'
+            ? 'top-0 bg-teal-dark shadow-lg py-2.5 md:py-3' 
+            : 'top-[36px] sm:top-[40px] bg-teal-dark py-4 md:py-5 lg:py-6'
         }`}
       >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,61 +79,51 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-1 bg-white/5 backdrop-blur-sm rounded-full px-2 py-1.5 border border-white/10">
             {navLinks.map((link) => {
-              const Icon = link.icon;
               const isActive = pathname === link.href;
               return (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`group flex items-center gap-2 relative transition-all duration-300 ease-in-out ${
+                  className={`relative px-4 py-2 text-base font-medium rounded-full transition-all duration-300 ease-in-out ${
                     isActive
-                      ? 'text-gold-primary'
-                      : 'text-gray-300 hover:text-gold-primary'
+                      ? 'text-gold-primary bg-white/10'
+                      : 'text-gray-200 hover:text-gold-primary hover:bg-white/5'
                   }`}
                 >
-                  <Icon 
-                    className={`w-4 h-4 transition-all duration-300 ease-in-out ${
-                      isActive 
-                        ? 'text-gold-primary scale-110' 
-                        : 'text-gray-400 group-hover:text-gold-primary group-hover:scale-110 group-hover:rotate-3'
-                    }`} 
-                  />
-                  <span className="relative transition-all duration-300 ease-in-out group-hover:translate-x-0.5">
+                  <span className="relative">
                     {link.label}
                   </span>
                   {isActive && (
-                    <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gold-primary rounded-full animate-pulse" />
+                    <span className="absolute -bottom-0.5 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-gold-primary rounded-full" />
                   )}
                 </Link>
               );
             })}
           </nav>
 
-          <div className="hidden md:flex items-center gap-4">
-            <Link href="/login">
-              <Button 
-                variant="ghost" 
-                className="text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-300 ease-in-out hover:scale-105"
-              >
-                Sign In
-              </Button>
+          <div className="hidden lg:flex items-center gap-4">
+            <Link 
+              href="/login"
+              className="text-sm text-gray-200 hover:text-gold-primary transition-colors duration-300 font-medium px-3 py-2 rounded-lg hover:bg-white/5"
+            >
+              Sign In
             </Link>
             <Link href="/get-started">
               <Button 
                 variant="secondary"
-                className="transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-gold-primary/50"
+                className="transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-gold-primary/30"
               >
                 Get Started
               </Button>
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile/Tablet Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-gold-primary hover:bg-white/10 rounded-lg transition-all duration-300 ease-in-out hover:scale-110 active:scale-95"
+            className="lg:hidden p-2 text-gold-primary hover:bg-white/10 rounded-lg transition-all duration-300 ease-in-out hover:scale-110 active:scale-95"
           >
             {mobileMenuOpen ? (
               <X className="w-6 h-6 transition-all duration-300 ease-in-out rotate-0" />
@@ -145,8 +135,8 @@ export function Header() {
 
         {/* Full Screen Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="fixed inset-0 top-0 left-0 right-0 bottom-0 bg-teal-dark z-50 md:hidden animate-in fade-in duration-300">
-            <div className="h-full flex flex-col">
+          <div className="fixed inset-0 top-0 left-0 right-0 bottom-0 bg-teal-dark z-[60] lg:hidden animate-in fade-in duration-300">
+            <div className="h-full flex flex-col pt-0">
               {/* Menu Header */}
               <div className="flex items-center justify-between px-4 sm:px-6 py-4 border-b border-gray-700/50 animate-in slide-in-from-top duration-300">
                 <Image
@@ -197,16 +187,6 @@ export function Header() {
                   })}
                   
                   <div className="flex flex-col gap-3 mt-8 pt-8 border-t border-gray-700/50 animate-in slide-in-from-bottom fade-in duration-500 delay-300">
-                    <Link href="/login" className="block" onClick={() => setMobileMenuOpen(false)}>
-                      <Button 
-                        variant="outline" 
-                        fullWidth 
-                        size="lg"
-                        className="border-gray-600 text-gray-300 hover:bg-white/10 hover:border-gold-primary hover:text-gold-primary transition-all duration-300 ease-in-out hover:scale-105 active:scale-95"
-                      >
-                        Sign In
-                      </Button>
-                    </Link>
                     <Link href="/get-started" className="block" onClick={() => setMobileMenuOpen(false)}>
                       <Button 
                         variant="secondary" 
@@ -215,6 +195,16 @@ export function Header() {
                         className="shadow-lg shadow-gold-primary/25 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-gold-primary/50 active:scale-95"
                       >
                         Get Started
+                      </Button>
+                    </Link>
+                    <Link href="/login" className="block" onClick={() => setMobileMenuOpen(false)}>
+                      <Button 
+                        variant="outline" 
+                        fullWidth 
+                        size="lg"
+                        className="border-gray-600 text-gray-300 hover:bg-white/10 hover:border-gold-primary hover:text-gold-primary transition-all duration-300 ease-in-out hover:scale-105 active:scale-95"
+                      >
+                        Sign In
                       </Button>
                     </Link>
                   </div>

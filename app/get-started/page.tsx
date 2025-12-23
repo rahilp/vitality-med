@@ -131,11 +131,11 @@ export default function GetStartedPage() {
 
   return (
     <>
-      <Section background="gray" spacing="lg" className="min-h-screen">
+      <Section background="gray" spacing="xl" className="min-h-screen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Left Column - Information and Benefits */}
-            <div className="space-y-6 lg:sticky lg:top-24">
+            <div className="space-y-8 lg:sticky lg:top-24">
               {/* Headline */}
               <div>
                 <h1 className="text-4xl sm:text-5xl mb-4" style={{ fontFamily: 'var(--font-heading)' }}>
@@ -147,8 +147,8 @@ export default function GetStartedPage() {
               </div>
 
               {/* Key Benefits */}
-              <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-                <div className="space-y-3">
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <div className="space-y-4">
                   {[
                     { icon: Clock, text: '24/7 Physician Access' },
                     { icon: Calendar, text: 'Same-day Appointments' },
@@ -169,9 +169,9 @@ export default function GetStartedPage() {
               </div>
 
               {/* Trust Indicators */}
-              <div className="bg-gradient-to-br from-teal-primary to-teal-dark rounded-xl p-6 text-white">
-                <h3 className="text-lg mb-3" style={{ fontFamily: 'var(--font-heading)' }}>No Commitment Required</h3>
-                <div className="space-y-2">
+              <div className="bg-gradient-to-br from-teal-primary to-teal-dark rounded-xl p-8 text-white">
+                <h3 className="text-lg mb-4" style={{ fontFamily: 'var(--font-heading)' }}>No Commitment Required</h3>
+                <div className="space-y-3">
                   <div className="flex items-start gap-2">
                     <Check className="w-4 h-4 text-gold-primary flex-shrink-0 mt-0.5" />
                     <span className="text-sm text-gray-100">Cancel anytime with 30 days notice</span>
@@ -188,7 +188,7 @@ export default function GetStartedPage() {
               </div>
 
               {/* Testimonial */}
-              <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
                 <div className="flex items-start gap-4">
                   <div className="flex-shrink-0">
                     <img
@@ -209,9 +209,9 @@ export default function GetStartedPage() {
               </div>
 
               {/* Contact Information */}
-              <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-200">
-                <h3 className="text-lg text-teal-primary mb-3" style={{ fontFamily: 'var(--font-heading)' }}>Have Questions?</h3>
-                <p className="text-gray-600 mb-3 text-sm">
+              <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200">
+                <h3 className="text-lg text-teal-primary mb-4" style={{ fontFamily: 'var(--font-heading)' }}>Have Questions?</h3>
+                <p className="text-gray-600 mb-4 text-sm">
                   Our team is here to help.
                 </p>
                 <div className="space-y-2">
@@ -234,9 +234,9 @@ export default function GetStartedPage() {
             </div>
 
             {/* Right Column - Account Setup Form */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 lg:p-10">
+            <div className="bg-white rounded-2xl shadow-lg p-10 lg:p-12">
               {/* Account Setup Header */}
-              <div className="mb-8">
+              <div className="mb-10">
                 <h2 className="text-3xl text-teal-primary mb-2" style={{ fontFamily: 'var(--font-heading)' }}>
                   {currentStep === 1 && 'Account Setup'}
                   {currentStep === 2 && 'Medical Profile'}
@@ -251,7 +251,7 @@ export default function GetStartedPage() {
               </div>
 
               {/* Form */}
-              <form className="space-y-6" onSubmit={currentStep === 3 ? handleSubmit : (e) => { e.preventDefault(); handleNext(); }}>
+              <form className="space-y-8" onSubmit={currentStep === 3 ? handleSubmit : (e) => { e.preventDefault(); handleNext(); }}>
                 {/* Step 1 Content */}
                 {currentStep === 1 && (
                   <>

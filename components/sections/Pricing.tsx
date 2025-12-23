@@ -125,13 +125,29 @@ export function Pricing() {
         ))}
       </div>
 
-      <div className="mt-12 text-center">
-        <p className="text-gray-600 mb-4">
-          All plans include acceptance of insurance for laboratory work and diagnostic tests.
-        </p>
-        <p className="text-sm text-gray-500">
-          * Office visits are not billed to insurance. Monthly membership covers all consultations.
-        </p>
+      <div className="mt-12">
+        <div className="bg-teal-primary/10 border-2 border-teal-primary/30 rounded-xl p-6 mb-8 max-w-2xl mx-auto">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-teal-primary flex items-center justify-center">
+              <span className="text-white text-xl font-semibold">$</span>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold text-teal-primary mb-2">Use Your HSA or FSA</h4>
+              <p className="text-gray-700">
+                Members can use their Health Savings Account (HSA) or Flexible Spending Account (FSA) to pay for their monthly membership fees. This makes concierge medicine even more affordable by using pre-tax dollars.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="text-center">
+          <p className="text-gray-600 mb-4">
+            All plans include acceptance of insurance for laboratory work and diagnostic tests.
+          </p>
+          <p className="text-sm text-gray-500">
+            * Office visits are not billed to insurance. Monthly membership covers all consultations.
+          </p>
+        </div>
       </div>
     </Section>
   );

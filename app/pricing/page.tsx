@@ -62,6 +62,30 @@ export default function PricingPage() {
       
       <Pricing />
       
+      <Section background="white" spacing="lg">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-teal-primary/10 border-2 border-teal-primary/30 rounded-xl p-8 mb-8">
+            <div className="flex items-start gap-6">
+              <div className="flex-shrink-0 w-16 h-16 rounded-full bg-teal-primary flex items-center justify-center">
+                <span className="text-white text-2xl font-semibold">$</span>
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold text-teal-primary mb-3">Use Your HSA or FSA to Pay for Membership</h3>
+                <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                  Members can use their Health Savings Account (HSA) or Flexible Spending Account (FSA) to pay for their monthly membership fees. This makes concierge medicine even more affordable by using pre-tax dollars.
+                </p>
+                <p className="text-gray-600">
+                  <strong className="text-teal-primary">HSA:</strong> Health Savings Accounts can be used to pay for qualified medical expenses, including direct primary care membership fees. Since HSA contributions are tax-deductible and withdrawals for qualified expenses are tax-free, using your HSA effectively reduces your healthcare costs.
+                </p>
+                <p className="text-gray-600 mt-3">
+                  <strong className="text-teal-primary">FSA:</strong> Flexible Spending Accounts can also be used for membership fees. FSA contributions are made with pre-tax dollars, providing immediate tax savings on your healthcare expenses.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+      
       <Section background="gray" spacing="lg">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">

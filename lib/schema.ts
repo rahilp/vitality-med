@@ -33,9 +33,9 @@ export interface BusinessSchema {
 export const businessSchema: BusinessSchema = {
   name: 'Vitality Concierge Medicine by Valencia',
   description: 'Healthcare Without The Insurance Hassle - Direct primary care with personalized, accessible, and affordable concierge medicine.',
-  url: 'https://www.vitalityconcierge.com', // Update with your actual domain
-  logo: 'https://www.vitalityconcierge.com/logo.svg', // Update with your actual logo URL
-  image: 'https://www.vitalityconcierge.com/logo.svg', // Update with your actual image URL
+  url: 'https://www.vitality-med.com', // Update with your actual domain
+  logo: 'https://www.vitality-med.com/logo.svg', // Update with your actual logo URL
+  image: 'https://www.vitality-med.com/logo.svg', // Update with your actual image URL
   telephone: '+18653336554', // Update with your actual phone number
   email: 'hello@vitality-med.com', // Update with your actual email
   address: {

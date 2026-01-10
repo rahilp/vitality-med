@@ -16,7 +16,7 @@ interface BreadcrumbsProps {
  * Google Guidelines: https://developers.google.com/search/docs/appearance/structured-data/breadcrumb
  */
 function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
-  const baseUrl = 'https://www.vitalityconcierge.com';
+  const baseUrl = 'https://www.vitality-med.com';
   
   return {
     '@context': 'https://schema.org',

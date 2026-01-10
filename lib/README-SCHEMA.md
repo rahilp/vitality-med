@@ -14,9 +14,9 @@ Simply update the `businessSchema` object with your actual business information:
 export const businessSchema: BusinessSchema = {
   name: 'Vitality Concierge Medicine by Valencia',
   description: 'Your business description...',
-  url: 'https://www.vitalityconcierge.com', // ← Update with your domain
+  url: 'https://www.vitality-med.com', // ← Update with your domain
   telephone: '+15551234567', // ← Update with your phone
-  email: 'hello@vitalityconcierge.com', // ← Update with your email
+  email: 'hello@vitality-med.com', // ← Update with your email
   address: {
     streetAddress: '123 Main Street', // ← Update with your address
     addressLocality: 'City',
@@ -80,6 +80,7 @@ After updating your schema information:
 - [Schema.org LocalBusiness](https://schema.org/LocalBusiness)
 - [Google Organization Guidelines](https://developers.google.com/search/docs/appearance/structured-data/organization)
 - [Google Rich Results Test](https://search.google.com/test/rich-results)
+
 
 
 
